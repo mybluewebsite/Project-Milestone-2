@@ -1,5 +1,4 @@
 /* Google fonts */
-
 @import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Duru+Sans&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
 
 /* Colour palette */
@@ -13,6 +12,7 @@
     --playstation-teal: #00ab9f;
 }
 
+/* Global Styles */
 
 body {
     font-family: var(--primary-font);
@@ -20,6 +20,6 @@ body {
 }
 
 h1 {
-    color: lightgreen;
+    color: white;
     text-align: center;
 }
