@@ -1,0 +1,25 @@
+/* Google fonts */
+
+@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Duru+Sans&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+
+/* Colour palette */
+:root {
+    --primary-font: "Didact", sans-serif;
+    --secondary-font: "Sansita", sans-serif;
+    --accent-font: "Duru Sans", sans-serif;
+    --playstation-blue: #2e6db4;
+    --playstation-red: #df0024;
+    --playstation-yellow: #f3c300;
+    --playstation-teal: #00ab9f;
+}
+
+
+body {
+    font-family: var(--primary-font);
+    background-color: black;
+}
+
+h1 {
+    color: lightgreen;
+    text-align: center;
+}
