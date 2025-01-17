@@ -15,15 +15,31 @@
 /* Global Styles */
 
 body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(10, 10, 10);
+    color: rgb(240, 240, 240);
+    font-family: var(--accent-font);
     display: flex;
-    flex-direction: column;
     align-items: center;
-    justify-content: space-between;
-    font-family: var(--primary-font);
+    flex-direction: column;
+    width: 100vw;
 }
 
-h1 {
-    color: white;
+header {
+    width: 95%;
+    max-width: 788px;
+    display: flex;
+    justify-content: flex-end;
+    padding: 12px;
+    margin-top: 15px;
+}
+
+.share-button {
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(240, 240, 240);
 }
 
 .dark {
