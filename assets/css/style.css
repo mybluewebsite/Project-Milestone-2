@@ -40,7 +40,8 @@ header {
 }
 
 h1 {
-    margin-top: 20px;
+    margin: 30px 0px;
+    font-size: 40px;
 }
 
 .share-button {
