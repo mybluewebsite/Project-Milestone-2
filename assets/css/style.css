@@ -59,6 +59,30 @@ h1 {
     align-items: center;
 }
 
+.tile-1 {
+    width: 100%;
+    background-color: rgb(187, 187, 187);
+    margin: 7px 0px;
+    border-radius: 20px;
+    height: 56px;
+}
+
+.tile-2 {
+    width: 100%;
+    background-color: rgb(40, 40, 43);
+    margin: 7px 0px;
+    border-radius: 20px;
+    height: 56px;
+}
+
+.tile-3 {
+    width: 100%;
+    background-color: rgb(146, 200, 62);
+    margin: 7px 0px;
+    border-radius: 20px;
+    height: 56px;
+}
+
 .dark {
     background-color: black;
     color: white;
