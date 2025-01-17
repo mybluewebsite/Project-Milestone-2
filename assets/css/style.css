@@ -59,28 +59,36 @@ h1 {
     align-items: center;
 }
 
-.tile-1 {
+.tile {
     width: 100%;
+    margin: 7px 0px;
+    border-radius: 20px;
+    height: 56px;
+    display: flex;
+    justify-content: space-between;
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: center;
+}
+
+#tile-1 {
     background-color: rgb(187, 187, 187);
-    margin: 7px 0px;
-    border-radius: 20px;
-    height: 56px;
+    background-image: url('../images/favicon_io_playstation/playstation_icon_180.png');
 }
 
-.tile-2 {
-    width: 100%;
+#tile-2 {
     background-color: rgb(40, 40, 43);
-    margin: 7px 0px;
-    border-radius: 20px;
-    height: 56px;
+    background-image: url('../images/favicon_io_playstation2/playstation_2_icon_180.png');
 }
 
-.tile-3 {
-    width: 100%;
+#tile-3 {
     background-color: rgb(146, 200, 62);
-    margin: 7px 0px;
-    border-radius: 20px;
-    height: 56px;
+    background-image: url('../images/favicon_io_xbox360/xbox360_icon_180.png');
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
 }
 
 .dark {
