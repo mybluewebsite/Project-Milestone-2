@@ -1,4 +1,4 @@
-// Switches between light and dark modes
+// Switches between light and dark modes function
 
 let darkmode = localStorage.getItem("darkmode");
 const darkModeToggle = document.getElementById("mode-button");
@@ -53,7 +53,7 @@ tiles.forEach((tile, index) => {
 
   tile.innerHTML = "";
   tile.appendChild(contentWrapper);
-  tile.appendChild(video); 
+  tile.appendChild(video);
 
   tile.addEventListener("mouseover", () => {
     video.style.display = "block"; 
