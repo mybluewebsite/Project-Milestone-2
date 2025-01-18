@@ -127,21 +127,29 @@ header {
     flex-wrap: wrap;
     justify-content: space-between;
     width: 33.33%;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 #tile-1 {
     background-color: var(--playstation-grey);
     /*background-image: url('../images/favicon_io_playstation/playstation_icon_180.png');*/
+    background-image: url("../images/frontpage_background_images/ps1_background.webp");
+    background-blend-mode: color-burn;
 }
 
 #tile-2 {
     background-color: var(--playstation-black);
     /*background-image: url('../images/favicon_io_playstation2/playstation_2_icon_180.png');*/
+    background-image: url("../images/frontpage_background_images/ps2_background.webp");
+    background-blend-mode: overlay;
 }
 
 #tile-3 {
     background-color: var(--xbox360-green);
     /*background-image: url('../images/favicon_io_xbox360/xbox360_icon_180.png');*/
+    background-image: url("../images/frontpage_background_images/xbox360_background.webp");
+    background-blend-mode: multiply;
 }
 
 .tile svg {
