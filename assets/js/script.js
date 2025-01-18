@@ -1,10 +1,41 @@
+
+// Detects dark-mode
+
+let darkmode = localStorage.getItem("darkmode");
+const darkModeToggle = document.getElementById("mode-button");
+
+const enableDarkMode = () => {
+  document.body.classList.add("darkmode");
+  localStorage.setItem("darkmode", "active");
+}
+
+const disableDarkMode = () => {
+  document.body.classList.remove("darkmode");
+  localStorage.setItem("darkmode", null);
+}
+
+if (darkmode === "active") {
+  enableDarkMode();
+}
+
+darkModeToggle.addEventListener("click", () => {
+  darkmode = localStorage.getItem("darkmode");
+  darkmode !== "active" ? enableDarkMode() : disableDarkMode();
+});
+
+
+
+
+
+
+
+
+
 // Takes user back to top of the screen
 
 const backToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
-// Detects dark-mode
-
-const darkMode = () => {
+/*const darkMode = () => {
   if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
     // If the user prefers dark mode, apply dark mode styles
     document.documentElement.classList.add("dark");
@@ -20,7 +51,7 @@ darkMode();
 // Add an event listener to handle system preference changes
 window
   .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", darkMode);
+  .addEventListener("change", darkMode);*/
 
 /* Video player to be used on mouseover */
 /*const video = document.getElementById('myVideo');

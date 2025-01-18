@@ -10,6 +10,27 @@
     --playstation-red: #df0024;
     --playstation-yellow: #f3c300;
     --playstation-teal: #00ab9f;
+    --primary-colour: rgb(10, 10, 10);
+    --secondary-colour: rgb(240, 240, 240);
+    --secondary-accent-colour: rgb(187, 187, 187);
+    --primary-accent-colour: rgb(52, 52, 52);
+    --playstation-grey: rgb(187, 187, 187);
+    --playstation-black: rgb(40, 40, 43);
+    --xbox360-green: rgb(146, 200, 62);
+}
+
+.darkmode {
+    --playstation-blue: #2e6db4;
+    --playstation-red: #df0024;
+    --playstation-yellow: #f3c300;
+    --playstation-teal: #00ab9f;
+    --secondary-colour: rgb(10, 10, 10);
+    --primary-colour: rgb(240, 240, 240);
+    --primary-accent-colour: rgb(187, 187, 187);
+    --secondary-accent-colour: rgb(52, 52, 52);
+    --playstation-grey: rgb(187, 187, 187);
+    --playstation-black: rgb(40, 40, 43);
+    --xbox360-green: rgb(146, 200, 62);
 }
 
 /* Global Styles */
@@ -17,8 +38,8 @@
 body {
     margin: 0;
     padding: 0;
-    background-color: rgb(10, 10, 10);
-    color: rgb(240, 240, 240);
+    background-color: var(--secondary-colour);
+    color: var(--primary-colour);
     font-family: var(--accent-font);
     display: flex;
     align-items: center;
@@ -41,17 +62,34 @@ h1 {
 }
 
 /* Button to change between dark, light, and high contrast modes */
-.accessibility-button {
-    width: 48px;
-    height: 48px;
-    border-radius: 24px;
-    background-color: rgb(240, 240, 240);
+#mode-button {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    padding: 0;
+    background-color: var(--secondary-accent-colour);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 20px;
+    right: 20px;
 }
 
-.accessibility-button svg {
-    width: 32px;
-    height: 32px;
-    margin: 8px 8px;
+#mode-button svg {
+    fill: var(--primary-accent-colour)
+}
+
+#mode-button svg:last-child {
+    display: none;
+}
+
+.dark-mode #mode-button svg:first-child {
+    display: none;
+}
+
+.dark-mode #mode-button svg:last-child {
+    display: block;
 }
 
 .container {
@@ -91,17 +129,17 @@ h1 {
 }
 
 #tile-1 {
-    background-color: rgb(187, 187, 187);
+    background-color: var(--playstation-grey);
     /*background-image: url('../images/favicon_io_playstation/playstation_icon_180.png');*/
 }
 
 #tile-2 {
-    background-color: rgb(40, 40, 43);
+    background-color: var(--playstation-black);
     /*background-image: url('../images/favicon_io_playstation2/playstation_2_icon_180.png');*/
 }
 
 #tile-3 {
-    background-color: rgb(146, 200, 62);
+    background-color: var(--xbox360-green);
     /*background-image: url('../images/favicon_io_xbox360/xbox360_icon_180.png');*/
 }
 
@@ -116,16 +154,4 @@ h1 {
 a {
     text-decoration: none;
     color: inherit;
-}
-
-/* Dark mode */
-.dark {
-    background-color: black;
-    color: white;
-}
-
-/* Light mode */
-.light {
-    background-color: white;
-    color: black;
 }
