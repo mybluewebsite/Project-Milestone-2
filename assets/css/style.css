@@ -33,12 +33,27 @@
     --xbox360-green: rgb(146, 200, 62);
 }
 
+/*.highcontrast {
+--playstation-blue-hc: rgb(0, 0, 255);
+--playstation-red-hc: rgb(255, 0, 0);
+--playstation-yellow-hc: rgb(255, 255, 0);
+--playstation-teal-hc: rgb(0, 255, 255);
+--secondary-colour-hc: rgb(255, 255, 255);
+--primary-colour-hc: rgb(0, 0, 0);
+--primary-accent-colour-hc: rgb(255, 255, 255);
+--secondary-accent-colour-hc: rgb(0, 0, 0);
+--playstation-grey-hc: rgb(255, 255, 255);
+--playstation-black-hc: rgb(255, 255, 255);
+--xbox360-green-hc: rgb(0, 255, 0);
+}*/
+
 /* Global Styles */
 
 body {
     margin: 0;
     padding: 0;
     background-color: var(--secondary-colour);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     color: var(--primary-colour);
     font-family: var(--accent-font);
     display: flex;
@@ -82,14 +97,6 @@ h1 {
 
 #mode-button svg:last-child {
     display: none;
-}
-
-.dark-mode #mode-button svg:first-child {
-    display: none;
-}
-
-.dark-mode #mode-button svg:last-child {
-    display: block;
 }
 
 .container {
