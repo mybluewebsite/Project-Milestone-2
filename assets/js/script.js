@@ -1,21 +1,47 @@
 // Takes user back to top of the screen
 
-const backToTop = () => window.scrollTo({top: 0, behavior: "smooth"});
+const backToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });
 
 // Detects dark-mode
 
 const darkMode = () => {
-    if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-      // If the user prefers dark mode, apply dark mode styles
-      document.documentElement.classList.add('dark'); 
-    } else {
-      // If the user prefers light mode, apply light mode styles (or remove dark mode class)
-      document.documentElement.classList.remove('dark'); 
-    }
+  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
+    // If the user prefers dark mode, apply dark mode styles
+    document.documentElement.classList.add("dark");
+  } else {
+    // If the user prefers light mode, apply light mode styles (or remove dark mode class)
+    document.documentElement.classList.remove("dark");
+  }
 };
-  
+
 // Call the function to initiate
 darkMode();
-  
+
 // Add an event listener to handle system preference changes
-window.matchMedia("(prefers-color-scheme: dark)").addEventListener('change', darkMode);
+window
+  .matchMedia("(prefers-color-scheme: dark)")
+  .addEventListener("change", darkMode);
+
+/* Video player to be used on mouseover */
+/*const video = document.getElementById('myVideo');
+
+document.addEventListener('mouseover', () => {
+    video.play();
+});
+
+document.addEventListener('mouseout', () => {
+    video.pause();
+    video.currentTime = 0; // Reset video to the beginning
+});*/
+
+/* PlayStation 1 opening screen clip from YouTube */
+<iframe
+  width="560"
+  height="315"
+  src="https://www.youtube.com/embed/gdytHA0DZ1M?si=lPPQNXSNJjx3mZb1&amp;clip=UgkxTNUrRBYbSQqyk-SToTWCDjrcXG2Nhf3r&amp;clipt=EKoVGLI8"
+  title="PlayStation 1 onpening screen"
+  frameborder="0"
+  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+  referrerpolicy="strict-origin-when-cross-origin"
+  allowfullscreen
+></iframe>;

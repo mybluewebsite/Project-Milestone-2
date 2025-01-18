@@ -42,10 +42,16 @@ h1 {
 
 /* Button to change between dark, light, and high contrast modes */
 .accessibility-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 25px;
+    width: 48px;
+    height: 48px;
+    border-radius: 24px;
     background-color: rgb(240, 240, 240);
+}
+
+.accessibility-button svg {
+    width: 32px;
+    height: 32px;
+    margin: 8px 8px;
 }
 
 .container {
