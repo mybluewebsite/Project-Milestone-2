@@ -35,16 +35,13 @@ header {
     margin: 15px 0px;
 }
 
-#frontpage-image {
-    border-radius: 50%;
-}
-
 h1 {
     margin: 30px 0px;
     font-size: 40px;
 }
 
-.share-button {
+/* Button to change between dark, light, and high contrast modes */
+.accessibility-button {
     width: 40px;
     height: 40px;
     border-radius: 20px;
@@ -58,6 +55,21 @@ h1 {
     display: flex;
     flex-direction: column;
     align-items: center;
+}
+
+.icon {
+    width: 50px;
+    height: 50px;
+    margin: 5px 10px;
+}
+
+.image-container {
+    border-radius: 125px;
+    overflow: hidden;
+}
+
+.image-container img {
+    height: 100%;
 }
 
 .tile {
@@ -74,25 +86,40 @@ h1 {
 
 #tile-1 {
     background-color: rgb(187, 187, 187);
-    background-image: url('../images/favicon_io_playstation/playstation_icon_180.png');
+    /*background-image: url('../images/favicon_io_playstation/playstation_icon_180.png');*/
 }
 
 #tile-2 {
     background-color: rgb(40, 40, 43);
-    background-image: url('../images/favicon_io_playstation2/playstation_2_icon_180.png');
+    /*background-image: url('../images/favicon_io_playstation2/playstation_2_icon_180.png');*/
 }
 
 #tile-3 {
     background-color: rgb(146, 200, 62);
-    background-image: url('../images/favicon_io_xbox360/xbox360_icon_180.png');
+    /*background-image: url('../images/favicon_io_xbox360/xbox360_icon_180.png');*/
 }
+
+/*.tile-button {
+    margin: 8px;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    background-color: rgb(52, 52, 52);
+}*/
 
 a {
     text-decoration: none;
     color: inherit;
 }
 
+/* Dark mode */
 .dark {
     background-color: black;
     color: white;
+}
+
+/* Light mode */
+.light {
+    background-color: white;
+    color: black;
 }
