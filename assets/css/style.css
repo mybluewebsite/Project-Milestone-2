@@ -42,9 +42,9 @@ h1 {
 
 /* Button to change between dark, light, and high contrast modes */
 .accessibility-button {
-    width: 40px;
-    height: 40px;
-    border-radius: 20px;
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
     background-color: rgb(240, 240, 240);
 }
 
