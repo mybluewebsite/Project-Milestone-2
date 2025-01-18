@@ -1,4 +1,4 @@
-// Detects dark-mode
+// Switches between light and dark modes
 
 let darkmode = localStorage.getItem("darkmode");
 const darkModeToggle = document.getElementById("mode-button");
@@ -34,6 +34,40 @@ darkModeToggle.addEventListener("click", () => {
 });
 
 
+/* Hover over function */
+
+const tiles = document.querySelectorAll(".tile");
+
+tiles.forEach((tile, index) => {
+  const video = document.createElement("video");
+  video.src = `assets/videos/${index + 1}.mp4`;
+  video.loop = true;
+  video.muted = true;
+  video.preload = "auto";
+  video.style.display = "none"; 
+  video.classList.add("video-replacement");
+
+  const existingContent = tile.innerHTML; 
+  const contentWrapper = document.createElement("div");
+  contentWrapper.innerHTML = existingContent;
+
+  tile.innerHTML = "";
+  tile.appendChild(contentWrapper);
+  tile.appendChild(video); 
+
+  tile.addEventListener("mouseover", () => {
+    video.style.display = "block"; 
+    contentWrapper.style.display = "none";
+    video.play();
+  });
+
+  tile.addEventListener("mouseout", () => {
+    video.pause();
+    video.currentTime = 0;
+    video.style.display = "none"; 
+    contentWrapper.style.display = "block";
+  });
+});
 
 
 
