@@ -70,7 +70,20 @@ tiles.forEach((tile, index) => {
 });
 
 
+/* Remove "bg-dark" default class from Bootstrap */
+
+const element = document.querySelector('.bg-dark');
+element.classList.remove('bg-dark');
+
+
+
+
 /* Custom navbar script */
+
+
+
+
+
 
 
 

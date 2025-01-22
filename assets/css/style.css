@@ -51,7 +51,7 @@
 
 body {
     margin: 0;
-    padding: 0;
+    padding: 60px 0px 0px 0px;
     background-color: var(--secondary-colour);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     color: var(--primary-colour);
@@ -68,7 +68,6 @@ header {
     max-width: 790px;
     display: flex;
     justify-content: flex-end;
-    padding: 12px;
     margin: 0px 0px 65px 0px;
 }
 
@@ -83,8 +82,8 @@ header {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 20px;
-    right: 20px;
+    top: 6px;
+    right: 80px;
 }
 
 #mode-button svg {
@@ -176,10 +175,56 @@ header {
     flex-direction: column;
 }
 
+/*.ps1-container h1 {
+    font-family: var(--primary-font);
+    font-size: 2rem;
+    margin: 10px 0px;
+}
+
+.ps1-container p {
+    font-family: var(--secondary-font);
+    font-size: 1.2rem;
+    margin: 10px 0px;
+}
+
+.ps1-container img {
+    width: 100%;
+    height: auto;
+    margin: 10px 0px;
+}*/
+
+/* Navbar styles */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: var(--secondary-accent-colour);
+}
+
+.nav-link {
+    color: var(--primary-colour);
+}
+
+.nav-link:hover {
+    color: var(--primary-accent-colour);
+}
+
+.navbar {
+    background-color: var(--secondary-colour);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
 .navbar-brand {
     font-family: var(--primary-font);
     font-size: 1.5rem;
     color: var(--primary-colour);
+}
+
+.navbar-brand:hover {
+    color: var(--primary-accent-colour);
 }
 
 .navbar-brand img {
