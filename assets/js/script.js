@@ -70,7 +70,7 @@ tiles.forEach((tile, index) => {
 });
 
 
-
+/* Custom navbar script */
 
 
 
