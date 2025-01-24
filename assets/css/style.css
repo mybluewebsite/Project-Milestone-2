@@ -33,20 +33,6 @@
     --xbox360-green: rgb(146, 200, 62);
 }
 
-/*.highcontrast {
---playstation-blue-hc: rgb(0, 0, 255);
---playstation-red-hc: rgb(255, 0, 0);
---playstation-yellow-hc: rgb(255, 255, 0);
---playstation-teal-hc: rgb(0, 255, 255);
---secondary-colour-hc: rgb(255, 255, 255);
---primary-colour-hc: rgb(0, 0, 0);
---primary-accent-colour-hc: rgb(255, 255, 255);
---secondary-accent-colour-hc: rgb(0, 0, 0);
---playstation-grey-hc: rgb(255, 255, 255);
---playstation-black-hc: rgb(255, 255, 255);
---xbox360-green-hc: rgb(0, 255, 0);
-}*/
-
 /* Global Styles */
 
 body {
@@ -162,6 +148,60 @@ header {
     opacity: 0.7;
 }
 
+.console-container {
+    width: 90%;
+    max-width: 1024px;
+    margin: 10px 0px;
+    display: flex;
+    flex-direction: column;
+}
+
+/* Navbar styles */
+
+nav {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 0px;
+    background-color: var(--secondary-accent-colour);
+}
+
+.nav-link:hover .nav-link:focus {
+    color: var(--primary-accent-colour);
+}
+
+.navbar {
+    background-color: var(--secondary-colour);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+}
+
+.navbar-brand {
+    font-family: var(--primary-font);
+    font-size: 1.5rem;
+    color: var(--primary-colour);
+}
+
+.navbar-brand:hover {
+    color: var(--primary-accent-colour);
+}
+
+.navbar-brand img {
+    height: 40px;
+    width: 40px;
+    margin-right: 10px;
+}
+
+.navbar-brand #xbox360-img {
+    height: 40px;
+    width: 60px;
+    margin-right: 10px;
+}
+
+.navbar-toggler {
+    background-color: var(--secondary-accent-colour);
+}
+
 /* Modal styles */
 
 .btn-close {
@@ -234,94 +274,3 @@ header {
 }
 
 
-
-
-
-
-
-
-
-/* ps1 page styles */
-
-.ps1-container {
-    width: 90%;
-    max-width: 1024px;
-    margin: 10px 0px;
-    display: flex;
-    flex-direction: column;
-}
-
-/*.ps1-container h1 {
-    font-family: var(--primary-font);
-    font-size: 2rem;
-    margin: 10px 0px;
-}
-
-.ps1-container p {
-    font-family: var(--secondary-font);
-    font-size: 1.2rem;
-    margin: 10px 0px;
-}
-
-.ps1-container img {
-    width: 100%;
-    height: auto;
-    margin: 10px 0px;
-}*/
-
-
-
-
-/* ps2 page styles */
-
-
-
-
-
-
-
-/* Navbar styles */
-
-nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    background-color: var(--secondary-accent-colour);
-}
-
-.nav-link:hover .nav-link:focus {
-    color: var(--primary-accent-colour);
-}
-
-.navbar {
-    background-color: var(--secondary-colour);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-}
-
-.navbar-brand {
-    font-family: var(--primary-font);
-    font-size: 1.5rem;
-    color: var(--primary-colour);
-}
-
-.navbar-brand:hover {
-    color: var(--primary-accent-colour);
-}
-
-.navbar-brand img {
-    height: 40px;
-    width: 40px;
-    margin-right: 10px;
-}
-
-.navbar-brand #xbox360-img {
-    height: 40px;
-    width: 60px;
-    margin-right: 10px;
-}
-
-.navbar-toggler {
-    background-color: var(--secondary-accent-colour);
-}
