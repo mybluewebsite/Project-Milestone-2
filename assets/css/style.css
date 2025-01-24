@@ -132,22 +132,19 @@ header {
 
 #tile-1 {
     background-color: var(--playstation-grey);
-    /*background-image: url('../images/favicon_io_playstation/playstation_icon_180.png');*/
-    background-image: url("../images/frontpage_background_images/ps1_background.webp");
+    background-image: url("../images/background_images/ps1_background.webp");
     background-blend-mode: color-burn;
 }
 
 #tile-2 {
     background-color: var(--playstation-black);
-    /*background-image: url('../images/favicon_io_playstation2/playstation_2_icon_180.png');*/
-    background-image: url("../images/frontpage_background_images/ps2_background.webp");
+    background-image: url("../images/background_images/ps2_background.webp");
     background-blend-mode: overlay;
 }
 
 #tile-3 {
     background-color: var(--xbox360-green);
-    /*background-image: url('../images/favicon_io_xbox360/xbox360_icon_180.png');*/
-    background-image: url("../images/frontpage_background_images/xbox360_background.webp");
+    background-image: url("../images/background_images/xbox360_remote.webp");
     background-blend-mode: multiply;
 }
 
@@ -190,6 +187,54 @@ header {
     font-size: 1.8rem;
 }
 
+/* Dropdown styles */
+
+.dropdown-menu {
+    padding: 0;
+    margin: 0;
+    border: 0;
+}
+
+.dropdown-item {
+    font-size: 1.4rem;
+}
+
+.dropdown-background-1 {
+    background-image: url("../images/background_images/ps1_remote.webp");
+    background-position: 15% 70%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--playstation-grey);
+    background-blend-mode: color-burn;
+}
+
+.dropdown-background-2 {
+    background-image: url("../images/background_images/ps2_remote.webp");
+    background-position: 0% 40%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--playstation-yellow);
+    background-blend-mode: overlay;
+    color:rgb(10, 10, 10);
+}
+
+.dropdown-background-3 {
+    background-image: url("../images/background_images/xbox360_remote.webp");
+    background-position: 0% 38%;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: var(--xbox360-green);
+    background-blend-mode: multiply;
+}
+
+
+
+
+
+
+
+
+
 /* ps1 page styles */
 
 .ps1-container {
@@ -218,27 +263,16 @@ header {
     margin: 10px 0px;
 }*/
 
-/* Dropdown styles */
 
-.dropdown-menu {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
 
-.dropdown-background-1 {
-    background-image: url();
-}
-
-.dropdown-background-2 {
-    background-image: url();
-}
-
-.dropdown-background-3 {
-    background-image: url();
-}
 
 /* ps2 page styles */
+
+
+
+
+
+
 
 /* Navbar styles */
 
