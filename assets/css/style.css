@@ -82,7 +82,7 @@ header {
     justify-content: center;
     align-items: center;
     position: fixed;
-    top: 6px;
+    top: 9px;
     right: 80px;
 }
 
@@ -187,7 +187,6 @@ header {
 }
 
 .nav-link {
-    color: var(--primary-colour);
     font-size: 1.8rem;
 }
 
@@ -231,6 +230,10 @@ header {
     background-image: url();
 }
 
+.dropdown-background-2 {
+    background-image: url();
+}
+
 .dropdown-background-3 {
     background-image: url();
 }
@@ -246,10 +249,6 @@ nav {
     align-items: center;
     padding: 10px 0px;
     background-color: var(--secondary-accent-colour);
-}
-
-.nav-link {
-    color: var(--primary-colour);
 }
 
 .nav-link:hover .nav-link:focus {
