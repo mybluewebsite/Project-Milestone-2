@@ -37,8 +37,6 @@
 /* Global Styles */
 
 body {
-    margin: 0;
-    padding: 60px 0px 0px 0px;
     background-color: var(--secondary-colour);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
     color: var(--primary-colour);
@@ -47,7 +45,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 45vw;
+    height: 40vw;
 }
 
 header {
@@ -140,37 +138,31 @@ header {
     margin: 10px 0px;
     box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
     transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color-burn;
+    background-size: cover;
 }
 
 #tile-1 {
-    background-color: var(--playstation-grey);
+    background-color: var(--playstation-blue);
     background-image: url("../images/background_images/1.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: color-burn
 }
 
 #tile-2 {
     background-color: var(--nintendo-red);
     background-image: url("../images/background_images/2.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: color-burn;
 }
 
 #tile-3 {
     background-color: var(--xbox-green);
     background-image: url("../images/background_images/3.jpg");
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: color-burn;
 }
 
 .tile svg {
-    fill: var(--primary-colour);
     width: 50px;
     height: 50px;
-    margin: 0px 0px 10px 0px;
+    position: inherit;
 }
 
 .gif-replacement {
