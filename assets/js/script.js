@@ -2,7 +2,7 @@
 
 let darkmode = localStorage.getItem("darkmode");
 const darkModeToggle = document.getElementById("mode-button");
-
+const wrapper = document.getElementById('wrapper');
 const lightModeSvg = document.querySelector("#mode-button svg:first-child");
 const darkModeSvg = document.querySelector("#mode-button svg:last-child");
 
@@ -34,8 +34,38 @@ darkModeToggle.addEventListener("click", () => {
 });
 
 
-/* Hover over function */
+/**
+ * This function handles the live loading of each 'page' of the website
+ * It takes a parameter that is a string of the page name and dynamically
+ * updates the wrapper div
+ * @param {*} page 
+ */
+function pageSelect(page) {
+    if (page==='home') {
+        window.location.reload();
+    }
+    if (page==='ps1') {
+        wrapper.innerHTML = `
+        <h1>Play Station</h1>
+        <p>Is a console...</p>
+        `
+    }
+    if (page==='ps2') {
+        wrapper.innerHTML = `
+        <h1>Play Station 2</h1>
+        <p>Is a console...</p>
+        `
+    }
+    if (page==='xbox360') {
+        wrapper.innerHTML = `
+        <h1>Xbox 360</h1>
+        <p>Is a console...</p>
+        `
+    }
+};
 
+
+/* Hover over function */
 const tiles = document.querySelectorAll(".tile");
 
 tiles.forEach((tile, index) => {
@@ -49,8 +79,8 @@ tiles.forEach((tile, index) => {
 
   const existingContent = tile.innerHTML; 
   const contentWrapper = document.createElement("div");
-  contentWrapper.innerHTML = existingContent;
 
+  contentWrapper.innerHTML = existingContent;
   tile.innerHTML = "";
   tile.appendChild(contentWrapper);
   tile.appendChild(video);
@@ -69,9 +99,7 @@ tiles.forEach((tile, index) => {
   });
 });
 
-
 /* Remove default classes from Bootstrap */
-
 const element = document.querySelector('.bg-dark');
 element.classList.remove('bg-dark');
 
