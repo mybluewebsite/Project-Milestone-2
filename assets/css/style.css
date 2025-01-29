@@ -16,7 +16,8 @@
     --primary-accent-colour: rgb(52, 52, 52);
     --playstation-grey: rgb(187, 187, 187);
     --playstation-black: rgb(40, 40, 43);
-    --xbox360-green: rgb(146, 200, 62);
+    --xbox-green: rgb(12, 122, 31);
+    --nintendo-red: rgb(230, 0, 18);
 }
 
 .darkmode {
@@ -129,46 +130,54 @@ header {
 }
 
 .tile {
-    height: 100%;
+    width: 36%;
+    height: 60%;
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    width: 33.33%;
-    background-repeat: no-repeat;
-    background-size: cover;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    margin: 10px 0px;
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 #tile-1 {
     background-color: var(--playstation-grey);
-    background-image: url("../images/background_images/ps1_background.webp");
-    background-blend-mode: color-burn;
+    background-image: url("../images/background_images/1.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color-burn
 }
 
 #tile-2 {
-    background-color: var(--playstation-black);
-    background-image: url("../images/background_images/ps2_background.webp");
-    background-blend-mode: overlay;
+    background-color: var(--nintendo-red);
+    background-image: url("../images/background_images/2.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color-burn;
 }
 
 #tile-3 {
-    background-color: var(--xbox360-green);
-    background-image: url("../images/background_images/xbox360_remote.webp");
-    background-blend-mode: multiply;
+    background-color: var(--xbox-green);
+    background-image: url("../images/background_images/3.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-blend-mode: color-burn;
 }
 
 .tile svg {
-    height: auto;
-    width: 100%;
-    margin: auto;
-    padding: 5% 5%;
+    fill: var(--primary-colour);
+    width: 50px;
+    height: 50px;
+    margin: 0px 0px 10px 0px;
 }
 
-.video-replacement {
+.gif-replacement {
     width: 100%;
-    height: 100%; 
+    height: 100%;
     object-fit: cover;
-    opacity: 0.7;
+    border-radius: 10px;
 }
 
 .console-container {
@@ -192,7 +201,7 @@ header {
 
 
 /* Navbar styles */
-
+/*
 nav {
     width: 100%;
     display: flex;
@@ -236,9 +245,9 @@ nav {
 .navbar-toggler {
     background-color: var(--secondary-accent-colour);
 }
-
+*/
 /* Modal styles */
-
+/*
 .btn-close {
     font-size: 2.3rem;
     color: var(--primary-colour);
@@ -267,9 +276,9 @@ nav {
 .nav-link {
     font-size: 1.8rem;
 }
-
+*/
 /* Dropdown styles */
-
+/*
 .dropdown-menu {
     padding: 0;
     margin: 0;
@@ -308,4 +317,4 @@ nav {
     background-blend-mode: multiply;
 }
 
-
+*/
