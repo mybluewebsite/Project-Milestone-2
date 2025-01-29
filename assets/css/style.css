@@ -45,7 +45,7 @@ body {
     align-items: center;
     flex-direction: column;
     width: 100vw;
-    height: 40vw;
+    height: 35vw;
 }
 
 header {
@@ -53,7 +53,8 @@ header {
     max-width: 790px;
     display: flex;
     justify-content: flex-end;
-    margin: 0px 0px 65px 0px;
+    align-items: center;
+    margin: 4px 0px;
 }
 
 /* Button to change between dark, light, and high contrast modes */
