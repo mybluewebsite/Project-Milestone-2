@@ -34,42 +34,50 @@ darkModeToggle.addEventListener("click", () => {
 });
 
 /**
- * This function handles the live loading of each 'page' of the website
- * It takes a parameter that is a string of the page name and dynamically
- * updates the wrapper div
- * @param {*} page
+ * Loads content dynamically into the wrapper div based on the selected page.
+ * @param {string} page The name of the page to load.
  */
 function pageSelect(page) {
-  if (page === "home") {
-    window.location.reload();
+  switch (page) {
+    case "home":
+      window.location.reload();
+      break;
+    case "ps":
+      wrapper.innerHTML = `
+        <a href="ps.html" id="ps-style">PlayStation</a>
+        <a href="ps-games.html">PlayStation Games</a>
+      `;
+      break;
+    case "ns":
+      wrapper.innerHTML = `
+        <a href="ns.html" id="ns-style">Nintendo Switch</a>
+        <a href="ns-games.html">Nintendo Switch Games</a>
+      `;
+      break;
+    case "xbox":
+      wrapper.innerHTML = `
+        <a href="xbox.html" id="xbox-style">Xbox Series X</a>
+        <a href="xbox-games.html">Xbox Games</a>
+      `;
+      break;
+    default:
+      console.error(`Invalid page selected: ${page}`);
+      wrapper.innerHTML = `
+        <h1>Page Not Found</h1>
+        <br>
+        <p>The requested page could not be found.</p>
+      `;
   }
-  if (page === "ps1") {
-    wrapper.innerHTML = `
-        <h1>Play Station</h1>
-        <p>Is a console...</p>
-        `;
-  }
-  if (page === "ps2") {
-    wrapper.innerHTML = `
-        <h1>Play Station 2</h1>
-        <p>Is a console...</p>
-        `;
-  }
-  if (page === "xbox360") {
-    wrapper.innerHTML = `
-        <h1>Xbox 360</h1>
-        <p>Is a console...</p>
-        `;
-  }
-}
+};
+
 
 const tiles = document.querySelectorAll(".tile");
 
 tiles.forEach((tile, index) => {
   const gif = document.createElement("img");
   gif.src = `assets/gifs/${index + 1}.gif`;
-  gif.loop = true; // GIFs loop by default
-  gif.classList.add("gif-replacement"); // Add a class for styling
+  gif.loop = true;
+  gif.classList.add("gif-replacement");
   gif.style.display = "none";
 
   const existingContent = tile.innerHTML;
@@ -95,50 +103,7 @@ tiles.forEach((tile, index) => {
 const element = document.querySelector(".bg-dark");
 element.classList.remove("bg-dark");
 
-/* Custom navbar script */
 
 /*// Takes user back to top of the screen
 
 const backToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });*/
-
-/*const darkMode = () => {
-  if (window.matchMedia("(prefers-color-scheme: dark)").matches) {
-    // If the user prefers dark mode, apply dark mode styles
-    document.documentElement.classList.add("dark");
-  } else {
-    // If the user prefers light mode, apply light mode styles (or remove dark mode class)
-    document.documentElement.classList.remove("dark");
-  }
-};
-
-// Call the function to initiate
-darkMode();
-
-// Add an event listener to handle system preference changes
-window
-  .matchMedia("(prefers-color-scheme: dark)")
-  .addEventListener("change", darkMode);*/
-
-/* Video player to be used on mouseover */
-/*const video = document.getElementById('myVideo');
-
-document.addEventListener('mouseover', () => {
-    video.play();
-});
-
-document.addEventListener('mouseout', () => {
-    video.pause();
-    video.currentTime = 0; // Reset video to the beginning
-});*/
-
-/* PlayStation 1 opening screen clip from YouTube */
-/*<iframe
-  width="560"
-  height="315"
-  src="https://www.youtube.com/embed/gdytHA0DZ1M?si=lPPQNXSNJjx3mZb1&amp;clip=UgkxTNUrRBYbSQqyk-SToTWCDjrcXG2Nhf3r&amp;clipt=EKoVGLI8"
-  title="PlayStation 1 onpening screen"
-  frameborder="0"
-  allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-  referrerpolicy="strict-origin-when-cross-origin"
-  allowfullscreen
-></iframe>;*/

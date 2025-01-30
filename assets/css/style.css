@@ -95,6 +95,10 @@ header {
     left: 15px;
 }
 
+#home-button svg {
+    fill: var(--primary-accent-colour)
+}
+
 .container {
     width: 90%;
     max-width: 680px;
@@ -127,6 +131,27 @@ header {
     align-items: center;
     flex-wrap: wrap;
 }
+
+#wrapper h1 {
+    font-size: 2.5rem;
+    font-family: var(--primary-font);
+    margin: 10px 0px;
+}
+
+#wrapper a {
+    text-decoration: none;
+    color: var(--primary-colour);
+}
+
+#wrapper a:hover {
+    color: var(--primary-accent-colour);
+}
+
+#wrapper p {
+    font-size: 1.5rem;
+    margin: 10px 0px;
+}
+
 
 .tile {
     width: 36%;
@@ -194,7 +219,7 @@ header {
 
 
 /* Navbar styles */
-/*
+
 nav {
     width: 100%;
     display: flex;
@@ -226,7 +251,7 @@ nav {
 .navbar-brand img {
     height: 40px;
     width: 40px;
-    margin-right: 10px;
+    margin-left: 60px;
 }
 
 .navbar-brand #xbox360-img {
@@ -238,9 +263,9 @@ nav {
 .navbar-toggler {
     background-color: var(--secondary-accent-colour);
 }
-*/
+
 /* Modal styles */
-/*
+
 .btn-close {
     font-size: 2.3rem;
     color: var(--primary-colour);
@@ -269,9 +294,9 @@ nav {
 .nav-link {
     font-size: 1.8rem;
 }
-*/
+
 /* Dropdown styles */
-/*
+
 .dropdown-menu {
     padding: 0;
     margin: 0;
@@ -309,5 +334,3 @@ nav {
     background-color: var(--xbox360-green);
     background-blend-mode: multiply;
 }
-
-*/
