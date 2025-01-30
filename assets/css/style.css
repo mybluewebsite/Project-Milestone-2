@@ -206,18 +206,6 @@ header {
     flex-direction: column;
 }
 
-
-
-
-
-
-
-
-
-
-
-
-
 /* Navbar styles */
 
 nav {
@@ -244,93 +232,8 @@ nav {
     color: var(--primary-colour);
 }
 
-.navbar-brand:hover {
-    color: var(--primary-accent-colour);
-}
-
 .navbar-brand img {
     height: 40px;
     width: 40px;
     margin-left: 60px;
-}
-
-.navbar-brand #xbox360-img {
-    height: 40px;
-    width: 60px;
-    margin-right: 10px;
-}
-
-.navbar-toggler {
-    background-color: var(--secondary-accent-colour);
-}
-
-/* Modal styles */
-
-.btn-close {
-    font-size: 2.3rem;
-    color: var(--primary-colour);
-}
-
-.btn-close:hover {
-    color: var(--primary-accent-colour);
-}
-
-.offcanvas-title img {
-    margin-right: 10px;
-    height: 40px;
-    width: 40px;
-}
-
-.offcanvas-title #xbox360-img {
-    margin-right: 10px;
-    height: 40px;
-    width: 60px;
-}
-
-.offcanvas-title {
-    font-size: 2.3rem;
-}
-
-.nav-link {
-    font-size: 1.8rem;
-}
-
-/* Dropdown styles */
-
-.dropdown-menu {
-    padding: 0;
-    margin: 0;
-    border: 0;
-}
-
-.dropdown-item {
-    font-size: 1.4rem;
-}
-
-.dropdown-background-1 {
-    background-image: url("../images/background_images/ps1_remote.webp");
-    background-position: 15% 70%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--playstation-grey);
-    background-blend-mode: color-burn;
-}
-
-.dropdown-background-2 {
-    background-image: url("../images/background_images/ps2_remote.webp");
-    background-position: 0% 40%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--playstation-yellow);
-    background-blend-mode: overlay;
-    color:rgb(10, 10, 10);
-}
-
-.dropdown-background-3 {
-    background-image: url("../images/background_images/xbox360_remote.webp");
-    background-position: 0% 38%;
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-color: var(--xbox360-green);
-    background-blend-mode: multiply;
 }
