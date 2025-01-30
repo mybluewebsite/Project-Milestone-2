@@ -44,20 +44,26 @@ function pageSelect(page) {
       break;
     case "ps":
       wrapper.innerHTML = `
-        <a href="ps.html" id="ps-style">PlayStation</a>
-        <a href="ps-games.html">PlayStation Games</a>
+        <div class="ps-container">
+          <a href="ps.html" id="ps-style">PlayStation</a>
+          <a href="ps-games.html">PlayStation Games</a>
+        </div>
       `;
       break;
     case "ns":
       wrapper.innerHTML = `
+      <div class="ns-container">
         <a href="ns.html" id="ns-style">Nintendo Switch</a>
         <a href="ns-games.html">Nintendo Switch Games</a>
+      </div>
       `;
       break;
     case "xbox":
       wrapper.innerHTML = `
+      <div class="xbox-container">
         <a href="xbox.html" id="xbox-style">Xbox Series X</a>
         <a href="xbox-games.html">Xbox Games</a>
+      </div>
       `;
       break;
     default:
@@ -68,8 +74,7 @@ function pageSelect(page) {
         <p>The requested page could not be found.</p>
       `;
   }
-};
-
+}
 
 const tiles = document.querySelectorAll(".tile");
 
@@ -102,7 +107,6 @@ tiles.forEach((tile, index) => {
 /* Remove default classes from Bootstrap */
 const element = document.querySelector(".bg-dark");
 element.classList.remove("bg-dark");
-
 
 /*// Takes user back to top of the screen
 
