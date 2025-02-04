@@ -241,23 +241,28 @@ nav {
 .ps-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+#ps-style {
+    
+}
+
+#ps-game-style {
+
 }
 
 .ns-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }
 
 .xbox-container {
     width: 100%;
     display: flex;
-    justify-content: space-around;
-    align-items: center;
     flex-wrap: wrap;
+    justify-content: space-evenly;
 }

@@ -35,7 +35,7 @@ darkModeToggle.addEventListener("click", () => {
 
 /**
  * Loads content dynamically into the wrapper div based on the selected page.
- * @param {string} page The name of the page to load.
+ * @param {string} page - The name of the page to load.
  */
 function pageSelect(page) {
   switch (page) {
@@ -45,24 +45,30 @@ function pageSelect(page) {
     case "ps":
       wrapper.innerHTML = `
         <div class="ps-container">
-          <a href="ps.html" id="ps-style">PlayStation</a>
-          <a href="ps-games.html">PlayStation Games</a>
+          <a href="ps.html" id="ps-style">
+          <img src="" alt="PlayStation 5"</a>
+          <a href="ps-games.html" id="ps-games-style">
+          <img src="" alt="PlayStation 5 Games"</a>
         </div>
       `;
       break;
     case "ns":
       wrapper.innerHTML = `
       <div class="ns-container">
-        <a href="ns.html" id="ns-style">Nintendo Switch</a>
-        <a href="ns-games.html">Nintendo Switch Games</a>
+        <a href="ns.html" id="ns-style">
+        <img src="" alt="Nintendo Switch"</a>
+        <a href="ns-games.html" id="ns-games-style">
+        <img src="" alt="Nintendo Switch Games"</a>
       </div>
       `;
       break;
     case "xbox":
       wrapper.innerHTML = `
       <div class="xbox-container">
-        <a href="xbox.html" id="xbox-style">Xbox Series X</a>
-        <a href="xbox-games.html">Xbox Games</a>
+        <a href="xbox.html" id="xbox-style">
+        <img src="" alt="Xbox Series X"</a>
+        <a href="xbox-games.html" id="xbox-games-style">
+        <img src="" alt="Xbox Series X Games"</a>
       </div>
       `;
       break;
@@ -104,7 +110,8 @@ tiles.forEach((tile, index) => {
   });
 });
 
-/* Remove default classes from Bootstrap */
+// Remove default classes from Bootstrap
+
 const element = document.querySelector(".bg-dark");
 element.classList.remove("bg-dark");
 
