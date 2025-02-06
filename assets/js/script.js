@@ -46,9 +46,9 @@ function pageSelect(page) {
       wrapper.innerHTML = `
         <div class="ps-container">
           <a href="ps.html" id="ps-style">
-          <img src="" alt="PlayStation 5"</a>
+          <img src="assets/images/background_images/ps_girl.webp" alt="PlayStation 5"</a>
           <a href="ps-games.html" id="ps-games-style">
-          <img src="" alt="PlayStation 5 Games"</a>
+          <img src="assets/images/background_images/ps5_games.webp" alt="PlayStation 5 Games"</a>
         </div>
       `;
       break;
@@ -56,9 +56,9 @@ function pageSelect(page) {
       wrapper.innerHTML = `
       <div class="ns-container">
         <a href="ns.html" id="ns-style">
-        <img src="" alt="Nintendo Switch"</a>
+        <img src="assets/images/background_images/ns_console.webp" alt="Nintendo Switch"</a>
         <a href="ns-games.html" id="ns-games-style">
-        <img src="" alt="Nintendo Switch Games"</a>
+        <img src="assets/images/background_images/ns_games.webp" alt="Nintendo Switch Games"</a>
       </div>
       `;
       break;
@@ -66,9 +66,9 @@ function pageSelect(page) {
       wrapper.innerHTML = `
       <div class="xbox-container">
         <a href="xbox.html" id="xbox-style">
-        <img src="" alt="Xbox Series X"</a>
+        <img src="assets/images/background_images/xbox_console.webp" alt="Xbox Series X"</a>
         <a href="xbox-games.html" id="xbox-games-style">
-        <img src="" alt="Xbox Series X Games"</a>
+        <img src="assets/images/background_images/xbox_games.webp" alt="Xbox Series X Games"</a>
       </div>
       `;
       break;
