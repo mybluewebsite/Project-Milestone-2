@@ -249,12 +249,14 @@ nav {
     border-radius: 20px;
     display: flex;
     height: 600px;
+    margin-top: 60px;
 }
 
 #ps-games-style img {
     border-radius: 20px;
     display: flex;
     height: 600px;
+    margin-top: 60px;
 }
 
 .ns-container {
@@ -264,9 +266,38 @@ nav {
     justify-content: space-evenly;
 }
 
+#ns-style img {
+    border-radius: 20px;
+    display: flex;
+    height: 450px;
+    width: auto;
+    margin-top: 60px;
+}
+
+#ns-games-style img {
+    border-radius: 20px;
+    display: flex;
+    height: 450px;
+    margin-top: 60px;
+}
+
 .xbox-container {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
     justify-content: space-evenly;
+}
+
+#xbox-style img {
+    border-radius: 20px;
+    display: flex;
+    height: 450px;
+    margin-top: 60px;
+}
+
+#xbox-games-style img {
+    border-radius: 20px;
+    display: flex;
+    height: 450px;
+    margin-top: 60px;
 }
