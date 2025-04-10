@@ -130,6 +130,7 @@ const psgames = [
     year: 1997,
     description: "A groundbreaking RPG with a compelling story.",
     image: "assets/images/ff7.jpg",
+    rating: 92,
   },
   {
     title: "Metal Gear Solid",
@@ -137,6 +138,7 @@ const psgames = [
     year: 1998,
     description: "A revolutionary stealth action game.",
     image: "assets/images/mgs.jpg",
+    rating: 94,
   },
   {
     title: "Grand Theft Auto: San Andreas",
@@ -144,6 +146,7 @@ const psgames = [
     year: 2004,
     description: "An open-world action-adventure classic.",
     image: "assets/images/gta-sa.jpg",
+    rating: 93,
   },
   {
     title: "Shadow of the Colossus",
@@ -151,6 +154,7 @@ const psgames = [
     year: 2005,
     description: "An atmospheric action-adventure game.",
     image: "assets/images/sotc.jpg",
+    rating: 91,
   },
   {
     title: "The Last of Us",
@@ -158,6 +162,7 @@ const psgames = [
     year: 2013,
     description: "A post-apocalyptic action-adventure masterpiece.",
     image: "assets/images/tlou.jpg",
+    rating: 95,
   },
   {
     title: "Uncharted 2: Among Thieves",
@@ -165,13 +170,15 @@ const psgames = [
     year: 2009,
     description: "An action-adventure game with cinematic storytelling.",
     image: "assets/images/uncharted2.jpg",
+    rating: 96,
   },
   {
-    title: "God of War (2018)",
+    title: "God of War",
     platform: "ps4",
     year: 2018,
     description: "A reimagined action-adventure with a powerful narrative.",
     image: "assets/images/gow.jpg",
+    rating: 94,
   },
   {
     title: "Horizon Zero Dawn",
@@ -179,6 +186,7 @@ const psgames = [
     year: 2017,
     description: "An open-world action RPG with unique gameplay.",
     image: "assets/images/horizon.jpg",
+    rating: 89,
   },
   {
     title: "Ratchet & Clank: Rift Apart",
@@ -186,21 +194,173 @@ const psgames = [
     year: 2021,
     description: "A visually stunning platformer with dimension-hopping gameplay.",
     image: "assets/images/ratchet.jpg",
+    rating: 90,
   },
   {
-    title: "Demon's Souls (2020)",
+    title: "Demon's Souls",
     platform: "ps5",
     year: 2020,
     description: "A challenging action RPG with immersive atmosphere.",
     image: "assets/images/demonsouls.jpg",
+    rating: 92,
   },
 ];
 
-function displayGames(filteredGames = psgames) {
-  const gameList = document.getElementById("game-list");
+const xboxgames = [
+  {
+    title: "Halo: Combat Evolved",
+    platform: "xbox",
+    year: 2001,
+    description: "A revolutionary first-person shooter that defined a generation.",
+    image: "assets/images/halo-ce.jpg",
+    rating: 92,
+  },
+  {
+    title: "Fable",
+    platform: "xbox",
+    year: 2004,
+    description: "A unique action RPG with moral choices and consequences.",
+    image: "assets/images/fable.jpg",
+    rating: 85,
+  },
+  {
+    title: "Gears of War",
+    platform: "xbox360",
+    year: 2006,
+    description: "A gritty third-person shooter with intense cover-based combat.",
+    image: "assets/images/gears.jpg",
+    rating: 91,
+  },
+  {
+    title: "Mass Effect 2",
+    platform: "xbox360",
+    year: 2010,
+    description: "A critically acclaimed space opera RPG with a compelling story.",
+    image: "assets/images/me2.jpg",
+    rating: 96,
+  },
+  {
+    title: "Forza Horizon 4",
+    platform: "xboxone",
+    year: 2018,
+    description: "An open-world racing game with stunning visuals and dynamic seasons.",
+    image: "assets/images/fh4.jpg",
+    rating: 92,
+  },
+  {
+    title: "Ori and the Blind Forest",
+    platform: "xboxone",
+    year: 2015,
+    description: "A beautiful and emotional platformer with Metroidvania elements.",
+    image: "assets/images/ori.jpg",
+    rating: 88,
+  },
+  {
+    title: "Halo Infinite",
+    platform: "xboxseriesx",
+    year: 2021,
+    description: "The latest installment in the legendary Halo franchise, featuring an open-world campaign.",
+    image: "assets/images/haloinfinite.jpg",
+    rating: 87,
+  },
+  {
+    title: "Forza Horizon 5",
+    platform: "xboxseriesx",
+    year: 2021,
+    description: "An open-world racing game set in Mexico, with stunning visuals and a vast world.",
+    image: "assets/images/fh5.jpg",
+    rating: 92,
+  },
+];
+
+const nsgames = [
+  {
+    title: "The Legend of Zelda",
+    platform: "nes",
+    year: 1986,
+    description: "A groundbreaking adventure that started a legendary series.",
+    image: "assets/images/zelda1.jpg",
+    rating: 91,
+  },
+  {
+    title: "Super Mario Bros. 3",
+    platform: "nes",
+    year: 1988,
+    description: "A platforming masterpiece with creative level design.",
+    image: "assets/images/smb3.jpg",
+    rating: 93,
+  },
+  {
+    title: "The Legend of Zelda: A Link to the Past",
+    platform: "snes",
+    year: 1991,
+    description: "An epic adventure with memorable dungeons and puzzles.",
+    image: "assets/images/alttp.jpg",
+    rating: 95,
+  },
+  {
+    title: "Super Metroid",
+    platform: "snes",
+    year: 1994,
+    description: "A classic action-adventure with exploration and atmosphere.",
+    image: "assets/images/supermetroid.jpg",
+    rating: 96,
+  },
+  {
+    title: "Super Mario 64",
+    platform: "n64",
+    year: 1996,
+    description: "A revolutionary 3D platformer that defined a genre.",
+    image: "assets/images/sm64.jpg",
+    rating: 94,
+  },
+  {
+    title: "The Legend of Zelda: Ocarina of Time",
+    platform: "n64",
+    year: 1998,
+    description: "A timeless adventure with groundbreaking gameplay.",
+    image: "assets/images/oot.jpg",
+    rating: 99,
+  },
+  {
+      title: "Super Mario Galaxy",
+      platform: "wii",
+      year: 2007,
+      description: "A gravity-defying platformer with innovative gameplay.",
+      image: "assets/images/smgalaxy.jpg",
+      rating: 97,
+  },
+    {
+      title: "The Legend of Zelda: Skyward Sword",
+      platform: "wii",
+      year: 2011,
+      description: "An immersive adventure with motion controls and a compelling story.",
+      image: "assets/images/skywardsword.jpg",
+      rating: 90,
+  },
+  {
+    title: "The Legend of Zelda: Breath of the Wild",
+    platform: "switch",
+    year: 2017,
+    description: "An open-world adventure that redefined the Zelda series.",
+    image: "assets/images/botw.jpg",
+    rating: 97,
+  },
+  {
+    title: "Super Mario Odyssey",
+    platform: "switch",
+    year: 2017,
+    description: "A delightful 3D platformer with creative gameplay mechanics.",
+    image: "assets/images/smo.jpg",
+    rating: 97,
+  },
+];
+
+function displayGames(games, gameListId) {
+  const gameList = document.getElementById(gameListId);
   gameList.innerHTML = "";
 
-  filteredGames.forEach((game) => {
+  games.forEach((game) => {
     const gameItem = document.createElement("li");
     gameItem.classList.add("game-item");
     gameItem.innerHTML = `
@@ -215,21 +375,41 @@ function displayGames(filteredGames = psgames) {
   });
 }
 
-displayGames();
+function setupFilter(filterControlsId, games, gameListId) {
+  const filterControls = document.getElementById(filterControlsId);
 
-document.getElementById("filter-controls").addEventListener("click", (event) => {
-  if (event.target.classList.contains("filter-button")) {
-    document.querySelectorAll(".filter-button").forEach((button) => {
-      button.classList.remove("active");
-    });
-    event.target.classList.add("active");
+  filterControls.addEventListener("click", (event) => {
+    if (event.target.classList.contains("filter-button")) {
+      document.querySelectorAll(`#${filterControlsId} .filter-button`).forEach((button) => {
+        button.classList.remove("active");
+      });
+      event.target.classList.add("active");
 
-    const filter = event.target.dataset.filter;
-    if (filter === "all") {
-      displayGames();
-    } else {
-      const filteredGames = psgames.filter((game) => game.platform === filter);
-      displayGames(filteredGames);
+      const filter = event.target.dataset.filter;
+      if (filter === "all") {
+        displayGames(games, gameListId);
+      } else {
+        const filteredGames = games.filter((game) => game.platform === filter);
+        displayGames(filteredGames, gameListId);
+      }
     }
-  }
-});
+  });
+}
+
+// Nintendo Games
+if (document.getElementById("game-list")) {
+    displayGames(nsgames, "game-list");
+    setupFilter("filter-controls", nsgames, "game-list");
+}
+
+// Xbox Games
+if (document.getElementById("game-list-xbox")) {
+    displayGames(xboxgames, "game-list-xbox");
+    setupFilter("filter-controls-xbox", xboxgames, "game-list-xbox");
+}
+
+// Playstation Games
+if (document.getElementById("game-list-ps")) {
+    displayGames(psgames, "game-list-ps");
+    setupFilter("filter-controls-ps", psgames, "game-list-ps");
+}
