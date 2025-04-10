@@ -118,3 +118,118 @@ element.classList.remove("bg-dark");
 /*// Takes user back to top of the screen
 
 const backToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });*/
+
+// JavaScript for ps-games.html
+
+// This script dynamically loads game data and filters it based on the selected platform.
+
+const games = [
+  {
+      title: "Final Fantasy VII",
+      platform: "ps1",
+      year: 1997,
+      description: "A groundbreaking RPG with a compelling story.",
+      image: "assets/images/ff7.jpg"
+  },
+  {
+      title: "Metal Gear Solid",
+      platform: "ps1",
+      year: 1998,
+      description: "A revolutionary stealth action game.",
+      image: "assets/images/mgs.jpg"
+  },
+  {
+      title: "Grand Theft Auto: San Andreas",
+      platform: "ps2",
+      year: 2004,
+      description: "An open-world action-adventure classic.",
+      image: "assets/images/gta-sa.jpg"
+  },
+  {
+      title: "Shadow of the Colossus",
+      platform: "ps2",
+      year: 2005,
+      description: "An atmospheric action-adventure game.",
+      image: "assets/images/sotc.jpg"
+  },
+  {
+      title: "The Last of Us",
+      platform: "ps3",
+      year: 2013,
+      description: "A post-apocalyptic action-adventure masterpiece.",
+      image: "assets/images/tlou.jpg"
+  },
+  {
+      title: "Uncharted 2: Among Thieves",
+      platform: "ps3",
+      year: 2009,
+      description: "An action-adventure game with cinematic storytelling.",
+      image: "assets/images/uncharted2.jpg"
+  },
+  {
+      title: "God of War (2018)",
+      platform: "ps4",
+      year: 2018,
+      description: "A reimagined action-adventure with a powerful narrative.",
+      image: "assets/images/gow.jpg"
+  },
+  {
+      title: "Horizon Zero Dawn",
+      platform: "ps4",
+      year: 2017,
+      description: "An open-world action RPG with unique gameplay.",
+      image: "assets/images/horizon.jpg"
+  },
+  {
+      title: "Ratchet & Clank: Rift Apart",
+      platform: "ps5",
+      year: 2021,
+      description: "A visually stunning platformer with dimension-hopping gameplay.",
+      image: "assets/images/ratchet.jpg"
+  },
+  {
+      title: "Demon's Souls (2020)",
+      platform: "ps5",
+      year: 2020,
+      description: "A challenging action RPG with immersive atmosphere.",
+      image: "assets/images/demonsouls.jpg"
+  }
+];
+
+function displayGames(filteredGames = games) {
+  const gameList = document.getElementById("game-list");
+  gameList.innerHTML = ""; // Clear existing list
+
+  filteredGames.forEach(game => {
+      const gameItem = document.createElement("li");
+      gameItem.classList.add("game-item");
+      gameItem.innerHTML = `
+          <img src="${game.image}" alt="${game.title}">
+          <div class="game-details">
+              <h3>${game.title} (${game.year})</h3>
+              <p>${game.description}</p>
+              <button>View Details</button>
+          </div>
+      `;
+      gameList.appendChild(gameItem);
+  });
+}
+
+displayGames(); // Display all games initially
+
+document.getElementById("filter-controls").addEventListener("click", (event) => {
+  if (event.target.classList.contains("filter-button")) {
+      document.querySelectorAll(".filter-button").forEach(button => {
+          button.classList.remove("active");
+      });
+      event.target.classList.add("active");
+
+      const filter = event.target.dataset.filter;
+      if (filter === "all") {
+          displayGames();
+      } else {
+          const filteredGames = games.filter(game => game.platform === filter);
+          displayGames(filteredGames);
+      }
+  }
+});
