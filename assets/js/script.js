@@ -115,10 +115,6 @@ tiles.forEach((tile, index) => {
 const element = document.querySelector(".bg-dark");
 element.classList.remove("bg-dark");
 
-/*// Takes user back to top of the screen
-
-const backToTop = () => window.scrollTo({ top: 0, behavior: "smooth" });*/
-
 // JavaScript for ps-games.html
 
 // This script dynamically loads game data and filters it based on the selected platform.
