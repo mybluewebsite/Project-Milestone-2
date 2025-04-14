@@ -188,7 +188,8 @@ const psgames = [
     title: "Ratchet & Clank: Rift Apart",
     platform: "ps5",
     year: 2021,
-    description: "A visually stunning platformer with dimension-hopping gameplay.",
+    description:
+      "A visually stunning platformer with dimension-hopping gameplay.",
     image: "assets/images/ratchet.jpg",
     rating: 90,
   },
@@ -207,7 +208,8 @@ const xboxgames = [
     title: "Halo: Combat Evolved",
     platform: "xbox",
     year: 2001,
-    description: "A revolutionary first-person shooter that defined a generation.",
+    description:
+      "A revolutionary first-person shooter that defined a generation.",
     image: "assets/images/halo-ce.jpg",
     rating: 92,
   },
@@ -223,7 +225,8 @@ const xboxgames = [
     title: "Gears of War",
     platform: "xbox360",
     year: 2006,
-    description: "A gritty third-person shooter with intense cover-based combat.",
+    description:
+      "A gritty third-person shooter with intense cover-based combat.",
     image: "assets/images/gears.jpg",
     rating: 91,
   },
@@ -231,7 +234,8 @@ const xboxgames = [
     title: "Mass Effect 2",
     platform: "xbox360",
     year: 2010,
-    description: "A critically acclaimed space opera RPG with a compelling story.",
+    description:
+      "A critically acclaimed space opera RPG with a compelling story.",
     image: "assets/images/me2.jpg",
     rating: 96,
   },
@@ -239,7 +243,8 @@ const xboxgames = [
     title: "Forza Horizon 4",
     platform: "xboxone",
     year: 2018,
-    description: "An open-world racing game with stunning visuals and dynamic seasons.",
+    description:
+      "An open-world racing game with stunning visuals and dynamic seasons.",
     image: "assets/images/fh4.jpg",
     rating: 92,
   },
@@ -247,7 +252,8 @@ const xboxgames = [
     title: "Ori and the Blind Forest",
     platform: "xboxone",
     year: 2015,
-    description: "A beautiful and emotional platformer with Metroidvania elements.",
+    description:
+      "A beautiful and emotional platformer with Metroidvania elements.",
     image: "assets/images/ori.jpg",
     rating: 88,
   },
@@ -255,7 +261,8 @@ const xboxgames = [
     title: "Halo Infinite",
     platform: "xboxseriesx",
     year: 2021,
-    description: "The latest installment in the legendary Halo franchise, featuring an open-world campaign.",
+    description:
+      "The latest installment in the legendary Halo franchise, featuring an open-world campaign.",
     image: "assets/images/haloinfinite.jpg",
     rating: 87,
   },
@@ -263,7 +270,8 @@ const xboxgames = [
     title: "Forza Horizon 5",
     platform: "xboxseriesx",
     year: 2021,
-    description: "An open-world racing game set in Mexico, with stunning visuals and a vast world.",
+    description:
+      "An open-world racing game set in Mexico, with stunning visuals and a vast world.",
     image: "assets/images/fh5.jpg",
     rating: 92,
   },
@@ -319,20 +327,21 @@ const nsgames = [
     rating: 99,
   },
   {
-      title: "Super Mario Galaxy",
-      platform: "wii",
-      year: 2007,
-      description: "A gravity-defying platformer with innovative gameplay.",
-      image: "assets/images/smgalaxy.jpg",
-      rating: 97,
+    title: "Super Mario Galaxy",
+    platform: "wii",
+    year: 2007,
+    description: "A gravity-defying platformer with innovative gameplay.",
+    image: "assets/images/smgalaxy.jpg",
+    rating: 97,
   },
-    {
-      title: "The Legend of Zelda: Skyward Sword",
-      platform: "wii",
-      year: 2011,
-      description: "An immersive adventure with motion controls and a compelling story.",
-      image: "assets/images/skywardsword.jpg",
-      rating: 90,
+  {
+    title: "The Legend of Zelda: Skyward Sword",
+    platform: "wii",
+    year: 2011,
+    description:
+      "An immersive adventure with motion controls and a compelling story.",
+    image: "assets/images/skywardsword.jpg",
+    rating: 90,
   },
   {
     title: "The Legend of Zelda: Breath of the Wild",
@@ -376,9 +385,11 @@ function setupFilter(filterControlsId, games, gameListId) {
 
   filterControls.addEventListener("click", (event) => {
     if (event.target.classList.contains("filter-button")) {
-      document.querySelectorAll(`#${filterControlsId} .filter-button`).forEach((button) => {
-        button.classList.remove("active");
-      });
+      document
+        .querySelectorAll(`#${filterControlsId} .filter-button`)
+        .forEach((button) => {
+          button.classList.remove("active");
+        });
       event.target.classList.add("active");
 
       const filter = event.target.dataset.filter;
@@ -394,18 +405,18 @@ function setupFilter(filterControlsId, games, gameListId) {
 
 // Nintendo Games
 if (document.getElementById("game-list")) {
-    displayGames(nsgames, "game-list");
-    setupFilter("filter-controls", nsgames, "game-list");
+  displayGames(nsgames, "game-list");
+  setupFilter("filter-controls", nsgames, "game-list");
 }
 
 // Xbox Games
 if (document.getElementById("game-list-xbox")) {
-    displayGames(xboxgames, "game-list-xbox");
-    setupFilter("filter-controls-xbox", xboxgames, "game-list-xbox");
+  displayGames(xboxgames, "game-list-xbox");
+  setupFilter("filter-controls-xbox", xboxgames, "game-list-xbox");
 }
 
 // Playstation Games
 if (document.getElementById("game-list-ps")) {
-    displayGames(psgames, "game-list-ps");
-    setupFilter("filter-controls-ps", psgames, "game-list-ps");
+  displayGames(psgames, "game-list-ps");
+  setupFilter("filter-controls-ps", psgames, "game-list-ps");
 }
