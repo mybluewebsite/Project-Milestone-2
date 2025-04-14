@@ -318,7 +318,7 @@ nav {
 }
 
 .timeline-image {
-    width: 200px;
+    width: 350px;
     border-radius: 10px;
     margin-bottom: 15px;
 }
@@ -327,7 +327,7 @@ nav {
 
 .learn-more-btn {
     padding: 10px 20px;
-    background-color: #007bff;
+    background-color: #ff4081;
     color: white;
     border: none;
     border-radius: 5px;
@@ -335,7 +335,7 @@ nav {
 }
 
 .learn-more-btn:hover {
-    background-color: #0056b3;
+    background-color: #e91e63
 }
 
 /* Game list styles */
@@ -360,13 +360,13 @@ body ns-games.html, body ps-games.html, body xbox-games.html {
     border-radius: 8px;
   }
   
-  #filter-controls {
+  #filter-controls, #filter-controls-xbox, #filter-controls-ps {
     text-align: center;
     margin-bottom: 20px;
   }
   
   .filter-button {
-    background-color: #3f51b5; /* Blue button color */
+    background-color: var(--playstation-yellow);
     color: white;
     border: none;
     padding: 10px 20px;
@@ -378,7 +378,7 @@ body ns-games.html, body ps-games.html, body xbox-games.html {
   }
   
   .filter-button:hover, .filter-button.active {
-    background-color: #5c6bc0; /* Lighter blue on hover/active */
+    background-color: var(--playstation-teal);
   }
   
   .game-list {
@@ -405,7 +405,7 @@ body ns-games.html, body ps-games.html, body xbox-games.html {
   }
   
   .game-details h3 {
-    color: #ff4081; /* Pink title color */
+    color: var(--primary-colour);
     margin-bottom: 5px;
     text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
   }
@@ -416,7 +416,7 @@ body ns-games.html, body ps-games.html, body xbox-games.html {
   }
   
   .game-details button {
-    background-color: #ff4081; /* Pink button color */
+    background-color: #ff4081;
     color: white;
     border: none;
     padding: 8px 15px;

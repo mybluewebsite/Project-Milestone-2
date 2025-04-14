@@ -115,9 +115,7 @@ tiles.forEach((tile, index) => {
 const element = document.querySelector(".bg-dark");
 element.classList.remove("bg-dark");
 
-// JavaScript for ps-games.html
-
-// This script dynamically loads game data and filters it based on the selected platform.
+// JavaScript to dynamically load game data and filter it based on the selected platform.
 
 const psgames = [
   {
