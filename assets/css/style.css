@@ -193,7 +193,7 @@ header {
 .gif-replacement {
   width: 100%;
   height: 100%;
-  object-fit: cover;
+  object-fit: inherit;
   border-radius: 10px;
 }
 
@@ -439,14 +439,20 @@ body xbox-games.html {
 
 /* Responsive styles */
 
-@media (max-width: 768px) {
+@media screen and (max-width: 425px) {
+  #tile-ps, #tile-ns, #tile-xbox {
+    height: 250%;
+  }
+}
+
+@media screen and (max-width: 768px) {
   .tile {
-    width: 100%;
-    height: 100%;
+    width: 90%;
+    height: 160%;
     margin: 12px 12px;
   }
 
-  #tile-ps {
+  #wrapper {
     margin-top: 60px;
   }
 
@@ -479,5 +485,97 @@ body xbox-games.html {
   #xbox-games-style img {
     width: 100%;
     height: auto;
+  }
+}
+
+@media screen and (min-width: 769px) and (max-width: 1024px) {
+  .tile {
+    width: 80%;
+    height: 80%;
+    margin: 12px 12px;
+  }
+
+  #home-button,
+  #mode-button {
+    width: 60px;
+    height: 60px;
+  }
+
+  #wrapper {
+    margin-top: 60px;
+  }
+
+  .game-item {
+    flex-direction: row;
+    align-items: center;
+  }
+
+  .game-item img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px;
+  }
+
+  .tile svg {
+    width: 70px;
+    height: 70px;
+  }
+}
+
+@media screen and (min-width: 1025px) and (max-width: 1440px) {
+  #home-button,
+  #mode-button {
+    width: 75px;
+    height: 75px;
+  }
+
+  #home-button svg,
+  #mode-button svg {
+    width: 40px;
+    height: 40px;
+  }
+
+  .tile {
+    width: 70%;
+    height: 70%;
+    margin: 12px 12px;
+  }
+
+  #wrapper {
+    margin-top: 100px;
+  }
+
+  .tile svg {
+    width: 100px;
+    height: 100px;
+  }
+}
+
+@media screen and (min-width: 1441px) and (max-width: 2560px) {
+  #home-button,
+  #mode-button {
+    width: 80px;
+    height: 80px;
+  }
+
+  #home-button svg,
+  #mode-button svg {
+    width: 45px;
+    height: 45px;
+  }
+
+  .tile {
+    width: 80%;
+    height: 120%;
+    margin: 18px 18px;
+  }
+
+  #wrapper {
+    margin-top: 100px;
+  }
+
+  .tile svg {
+    width: 75px;
+    height: 75px;
   }
 }
