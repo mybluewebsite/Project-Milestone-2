@@ -402,9 +402,9 @@ function setupFilter(filterControlsId, games, gameListId) {
 }
 
 // Nintendo Games
-if (document.getElementById("game-list")) {
-  displayGames(nsgames, "game-list");
-  setupFilter("filter-controls", nsgames, "game-list");
+if (document.getElementById("game-list-ns")) {
+  displayGames(nsgames, "game-list-ns");
+  setupFilter("filter-controls-ns", nsgames, "game-list-ns");
 }
 
 // Xbox Games

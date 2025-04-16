@@ -1,431 +1,438 @@
 /* Google fonts */
-@import url('https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Duru+Sans&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap');
+@import url("https://fonts.googleapis.com/css2?family=Didact+Gothic&family=Duru+Sans&family=Sansita:ital,wght@0,400;0,700;0,800;0,900;1,400;1,700;1,800;1,900&display=swap");
 
 /* Colour palette */
 :root {
-    --primary-font: "Didact", sans-serif;
-    --secondary-font: "Sansita", sans-serif;
-    --accent-font: "Duru Sans", sans-serif;
-    --playstation-blue: #2e6db4;
-    --playstation-red: #df0024;
-    --playstation-yellow: #f3c300;
-    --playstation-teal: #00ab9f;
-    --primary-colour: rgb(10, 10, 10);
-    --secondary-colour: rgb(240, 240, 240);
-    --secondary-accent-colour: rgb(187, 187, 187);
-    --primary-accent-colour: rgb(52, 52, 52);
-    --playstation-grey: rgb(187, 187, 187);
-    --playstation-black: rgb(40, 40, 43);
-    --xbox-green: rgb(12, 122, 31);
-    --nintendo-red: rgb(230, 0, 18);
+  --primary-font: "Didact", sans-serif;
+  --secondary-font: "Sansita", sans-serif;
+  --accent-font: "Duru Sans", sans-serif;
+  --playstation-blue: #2e6db4;
+  --playstation-red: #df0024;
+  --playstation-yellow: #f3c300;
+  --playstation-teal: #00ab9f;
+  --primary-colour: rgb(10, 10, 10);
+  --secondary-colour: rgb(240, 240, 240);
+  --secondary-accent-colour: rgb(187, 187, 187);
+  --primary-accent-colour: rgb(52, 52, 52);
+  --playstation-grey: rgb(187, 187, 187);
+  --playstation-black: rgb(40, 40, 43);
+  --xbox-green: rgb(12, 122, 31);
+  --nintendo-red: rgb(230, 0, 18);
 }
 
 .darkmode {
-    --playstation-blue: #2e6db4;
-    --playstation-red: #df0024;
-    --playstation-yellow: #f3c300;
-    --playstation-teal: #00ab9f;
-    --secondary-colour: rgb(10, 10, 10);
-    --primary-colour: rgb(240, 240, 240);
-    --primary-accent-colour: rgb(187, 187, 187);
-    --secondary-accent-colour: rgb(52, 52, 52);
-    --playstation-grey: rgb(187, 187, 187);
-    --playstation-black: rgb(40, 40, 43);
-    --xbox360-green: rgb(146, 200, 62);
+  --playstation-blue: #2e6db4;
+  --playstation-red: #df0024;
+  --playstation-yellow: #f3c300;
+  --playstation-teal: #00ab9f;
+  --secondary-colour: rgb(10, 10, 10);
+  --primary-colour: rgb(240, 240, 240);
+  --primary-accent-colour: rgb(187, 187, 187);
+  --secondary-accent-colour: rgb(52, 52, 52);
+  --playstation-grey: rgb(187, 187, 187);
+  --playstation-black: rgb(40, 40, 43);
+  --xbox360-green: rgb(146, 200, 62);
 }
 
 /* Global Styles */
 
 body {
-    background-color: var(--secondary-colour);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    color: var(--primary-colour);
-    font-family: var(--accent-font);
-    display: flex;
-    align-items: center;
-    flex-direction: column;
-    width: 100vw;
-    height: 35vw;
+  background-color: var(--secondary-colour);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  color: var(--primary-colour);
+  font-family: var(--accent-font);
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  width: 100vw;
+  height: 35vw;
 }
 
 header {
-    width: 95%;
-    max-width: 790px;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-    margin: 4px 0px;
+  width: 95%;
+  max-width: 790px;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  margin: 4px 0px;
 }
 
 /* Button to change between dark, light, and high contrast modes */
 #mode-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 0;
-    background-color: var(--secondary-accent-colour);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 9px;
-    right: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: var(--secondary-accent-colour);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 9px;
+  right: 15px;
 }
 
 #mode-button svg {
-    fill: var(--primary-accent-colour)
+  fill: var(--primary-accent-colour);
 }
 
 #mode-button svg:last-child {
-    display: none;
+  display: none;
 }
 
 /* Button to take the user back home */
 #home-button {
-    width: 50px;
-    height: 50px;
-    border-radius: 50%;
-    padding: 0;
-    background-color: var(--secondary-accent-colour);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: fixed;
-    top: 9px;
-    left: 15px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  padding: 0;
+  background-color: var(--secondary-accent-colour);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: fixed;
+  top: 9px;
+  left: 15px;
 }
 
 #home-button svg {
-    fill: var(--primary-accent-colour)
+  fill: var(--primary-accent-colour);
 }
 
 .container {
-    width: 90%;
-    max-width: 680px;
-    margin: 10px 0px;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  width: 90%;
+  max-width: 680px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .container-fluid {
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: space-around;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: space-around;
 }
 
 .image-container {
-    border-radius: 125px;
-    overflow: hidden;
+  border-radius: 125px;
+  overflow: hidden;
 }
 
 .image-container img {
-    height: 100%;
+  height: 100%;
 }
 
 #wrapper {
-    width: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-wrap: wrap;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
 }
 
 #wrapper h1 {
-    font-size: 2.5rem;
-    font-family: var(--primary-font);
-    margin: 10px 0px;
+  font-size: 2.5rem;
+  font-family: var(--primary-font);
+  margin: 10px 0px;
 }
 
 #wrapper a {
-    text-decoration: none;
-    color: var(--primary-colour);
+  text-decoration: none;
+  color: var(--primary-colour);
 }
 
 #wrapper a:hover {
-    color: var(--primary-accent-colour);
+  color: var(--primary-accent-colour);
 }
 
 #wrapper p {
-    font-size: 1.5rem;
-    margin: 10px 0px;
+  font-size: 1.5rem;
+  margin: 10px 0px;
 }
 
 .tile {
-    width: 36%;
-    height: 60%;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    border-radius: 10px;
-    margin: 10px 10px;
-    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-blend-mode: color-burn;
-    background-size: cover;
+  width: 36%;
+  height: 60%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  border-radius: 10px;
+  margin: 10px 10px;
+  box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.5);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-blend-mode: color-burn;
+  background-size: cover;
 }
 
-#tile-1 {
-    background-color: var(--playstation-blue);
-    background-image: url("../images/background_images/1.jpg");
+#tile-ps {
+  background-color: var(--playstation-blue);
+  background-image: url("../images/background_images/1.jpg");
 }
 
-#tile-2 {
-    background-color: var(--nintendo-red);
-    background-image: url("../images/background_images/2.jpg");
+#tile-ns {
+  background-color: var(--nintendo-red);
+  background-image: url("../images/background_images/2.jpg");
 }
 
-#tile-3 {
-    background-color: var(--xbox-green);
-    background-image: url("../images/background_images/3.jpg");
+#tile-xbox {
+  background-color: var(--xbox-green);
+  background-image: url("../images/background_images/3.jpg");
 }
 
 .tile svg {
-    width: 50px;
-    height: 50px;
-    position: inherit;
+  width: 50px;
+  height: 50px;
+  position: inherit;
 }
 
 .gif-replacement {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    border-radius: 10px;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 10px;
 }
 
 .console-container {
-    width: 90%;
-    max-width: 1024px;
-    margin: 10px 0px;
-    display: flex;
-    flex-direction: column;
+  width: 90%;
+  max-width: 1024px;
+  margin: 10px 0px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Navbar styles */
 
 nav {
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    padding: 10px 0px;
-    background-color: var(--secondary-accent-colour);
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 0px;
+  background-color: var(--secondary-accent-colour);
 }
 
 .nav-link:hover .nav-link:focus {
-    color: var(--primary-accent-colour);
+  color: var(--primary-accent-colour);
 }
 
 .navbar {
-    background-color: var(--secondary-colour);
-    transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
+  background-color: var(--secondary-colour);
+  transition: background-color 0.3s ease-in-out, color 0.3s ease-in-out;
 }
 
 .navbar-brand {
-    font-family: var(--primary-font);
-    font-size: 1.5rem;
-    color: var(--primary-colour);
+  font-family: var(--primary-font);
+  font-size: 1.5rem;
+  color: var(--primary-colour);
 }
 
 .navbar-brand img {
-    height: 40px;
-    width: 40px;
-    margin-left: 60px;
+  height: 40px;
+  width: 40px;
+  margin-left: 60px;
 }
 
 .ps-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #ps-style img {
-    border-radius: 20px;
-    display: flex;
-    height: 600px;
-    margin-top: 60px;
+  border-radius: 20px;
+  display: flex;
+  height: 600px;
+  margin-top: 60px;
 }
 
 #ps-games-style img {
-    border-radius: 20px;
-    display: flex;
-    height: 600px;
-    margin-top: 60px;
+  border-radius: 20px;
+  display: flex;
+  height: 600px;
+  margin-top: 60px;
 }
 
 .ns-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #ns-style img {
-    border-radius: 20px;
-    display: flex;
-    height: 450px;
-    width: auto;
-    margin-top: 60px;
+  border-radius: 20px;
+  display: flex;
+  height: 450px;
+  width: auto;
+  margin-top: 60px;
 }
 
 #ns-games-style img {
-    border-radius: 20px;
-    display: flex;
-    height: 450px;
-    margin-top: 60px;
+  border-radius: 20px;
+  display: flex;
+  height: 450px;
+  margin-top: 60px;
 }
 
 .xbox-container {
-    width: 100%;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-evenly;
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
 }
 
 #xbox-style img {
-    border-radius: 20px;
-    display: flex;
-    height: 450px;
-    margin-top: 60px;
+  border-radius: 20px;
+  display: flex;
+  height: 450px;
+  margin-top: 60px;
 }
 
 #xbox-games-style img {
-    border-radius: 20px;
-    display: flex;
-    height: 450px;
-    margin-top: 60px;
+  border-radius: 20px;
+  display: flex;
+  height: 450px;
+  margin-top: 60px;
 }
 
 /* timeline style */
 
 .timeline {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
 .timeline-item {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    margin-bottom: 30px;
-    text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  text-align: center;
 }
 
 .timeline-image {
-    width: 350px;
-    border-radius: 10px;
-    margin-bottom: 15px;
+  width: 350px;
+  border-radius: 10px;
+  margin-bottom: 15px;
 }
 
 /* learn-more style */
 
 .learn-more-btn {
-    padding: 10px 20px;
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
+  padding: 10px 20px;
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
 }
 
 .learn-more-btn:hover {
-    background-color: #e91e63
+  background-color: #e91e63;
 }
 
 /* Game list styles */
 
-body ns-games.html, body ps-games.html, body xbox-games.html {
-    font-family: 'Press Start 2P', cursive;
-    margin: 0;
-    padding: 0;
-    }
-  
-  .h1 {
-    text-align: center;
-    color: #ff4081;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-    margin-bottom: 20px;
-  }
-  
-  .container {
-    max-width: 960px;
-    margin: 20px auto;
-    padding: 20px;
-    border-radius: 8px;
-  }
-  
-  #filter-controls, #filter-controls-xbox, #filter-controls-ps {
-    text-align: center;
-    margin-bottom: 20px;
-  }
-  
-  .filter-button {
-    background-color: var(--playstation-yellow);
-    color: white;
-    border: none;
-    padding: 10px 20px;
-    margin: 5px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  }
-  
-  .filter-button:hover, .filter-button.active {
-    background-color: var(--playstation-teal);
-  }
-  
-  .game-list {
-    list-style: none;
-    padding: 0;
-  }
-  
-  .game-item {
-    display: flex;
-    align-items: center;
-    margin-bottom: 20px;
-    background-color: var(--secondary-accent-colour);
-    border-radius: 8px;
-    padding: 15px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
-  }
-  
-  .game-item img {
-    width: 150px;
-    height: auto;
-    border-radius: 5px;
-    margin-right: 20px;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  }
-  
-  .game-details h3 {
-    color: var(--primary-colour);
-    margin-bottom: 5px;
-    text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
-  }
-  
-  .game-details p {
-    font-size: 0.9em;
-    line-height: 1.5;
-  }
-  
-  .game-details button {
-    background-color: #ff4081;
-    color: white;
-    border: none;
-    padding: 8px 15px;
-    border-radius: 5px;
-    cursor: pointer;
-    transition: background-color 0.3s ease;
-    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
-  }
-  
-  .game-details button:hover {
-    background-color: #e91e63;
-  }
+body ns-games.html,
+body ps-games.html,
+body xbox-games.html {
+  font-family: "Press Start 2P", cursive;
+  margin: 0;
+  padding: 0;
+}
+
+.h1 {
+  text-align: center;
+  color: #ff4081;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  margin-bottom: 20px;
+}
+
+.container {
+  max-width: 960px;
+  margin: 20px auto;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+#filter-controls-ns,
+#filter-controls-xbox,
+#filter-controls-ps {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-button {
+  background-color: var(--playstation-yellow);
+  color: white;
+  border: none;
+  padding: 10px 20px;
+  margin: 5px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.filter-button:hover,
+.filter-button.active {
+  background-color: var(--playstation-teal);
+}
+
+.game-list-ps,
+.game-list-xbox,
+.game-list-ns {
+  list-style: none;
+  padding: 0;
+}
+
+.game-item {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+  background-color: var(--secondary-accent-colour);
+  border-radius: 8px;
+  padding: 15px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.game-item img {
+  width: 150px;
+  height: auto;
+  border-radius: 5px;
+  margin-right: 20px;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.game-details h3 {
+  color: var(--primary-colour);
+  margin-bottom: 5px;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.game-details p {
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.game-details button {
+  background-color: #ff4081;
+  color: white;
+  border: none;
+  padding: 8px 15px;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
+}
+
+.game-details button:hover {
+  background-color: #e91e63;
+}
