@@ -237,6 +237,21 @@ nav {
   margin-left: 60px;
 }
 
+#ps-logo {
+  height: 40px;
+  width: 60px;
+}
+
+#ns-logo {
+  height: 50px;
+  width: 50px;
+}
+
+#xbox-logo {
+  height: 30px;
+  width: 30px;
+}
+
 .ps-container {
   width: 100%;
   display: flex;
@@ -440,7 +455,9 @@ body xbox-games.html {
 /* Responsive styles */
 
 @media screen and (max-width: 425px) {
-  #tile-ps, #tile-ns, #tile-xbox {
+  #tile-ps,
+  #tile-ns,
+  #tile-xbox {
     height: 250%;
   }
 }
