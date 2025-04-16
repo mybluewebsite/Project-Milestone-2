@@ -151,14 +151,6 @@ const psgames = [
     rating: 91,
   },
   {
-    title: "The Last of Us",
-    platform: "Playstation 3",
-    year: 2013,
-    description: "A post-apocalyptic action-adventure masterpiece.",
-    image: "assets/images/#",
-    rating: 95,
-  },
-  {
     title: "Uncharted 2: Among Thieves",
     platform: "Playstation 3",
     year: 2009,
@@ -167,12 +159,12 @@ const psgames = [
     rating: 96,
   },
   {
-    title: "God of War",
-    platform: "Playstation 4",
-    year: 2018,
-    description: "A reimagined action-adventure with a powerful narrative.",
+    title: "The Last of Us",
+    platform: "Playstation 3",
+    year: 2013,
+    description: "A post-apocalyptic action-adventure masterpiece.",
     image: "assets/images/#",
-    rating: 94,
+    rating: 95,
   },
   {
     title: "Horizon Zero Dawn",
@@ -183,13 +175,12 @@ const psgames = [
     rating: 89,
   },
   {
-    title: "Ratchet & Clank: Rift Apart",
-    platform: "Playstation 5",
-    year: 2021,
-    description:
-      "A visually stunning platformer with dimension-hopping gameplay.",
+    title: "God of War",
+    platform: "Playstation 4",
+    year: 2018,
+    description: "A reimagined action-adventure with a powerful narrative.",
     image: "assets/images/#",
-    rating: 90,
+    rating: 94,
   },
   {
     title: "Demon's Souls",
@@ -198,6 +189,15 @@ const psgames = [
     description: "A challenging action RPG with immersive atmosphere.",
     image: "assets/images/#",
     rating: 92,
+  },
+  {
+    title: "Ratchet & Clank: Rift Apart",
+    platform: "Playstation 5",
+    year: 2021,
+    description:
+      "A visually stunning platformer with dimension-hopping gameplay.",
+    image: "assets/images/#",
+    rating: 90,
   },
 ];
 
@@ -238,15 +238,6 @@ const xboxgames = [
     rating: 96,
   },
   {
-    title: "Forza Horizon 4",
-    platform: "Xbox One",
-    year: 2018,
-    description:
-      "An open-world racing game with stunning visuals and dynamic seasons.",
-    image: "assets/images/#",
-    rating: 92,
-  },
-  {
     title: "Ori and the Blind Forest",
     platform: "Xbox One",
     year: 2015,
@@ -255,6 +246,15 @@ const xboxgames = [
     image: "assets/images/#",
     rating: 88,
   },
+  {
+    title: "Forza Horizon 4",
+    platform: "Xbox One",
+    year: 2018,
+    description:
+      "An open-world racing game with stunning visuals and dynamic seasons.",
+    image: "assets/images/#",
+    rating: 92,
+  }, 
   {
     title: "Halo Infinite",
     platform: "Xbox Series X",
