@@ -123,7 +123,7 @@ const psgames = [
     platform: "Playstation 1",
     year: 1997,
     description: "A groundbreaking RPG with a compelling story.",
-    image: "assets/images/#",
+    image: "assets/images/games/ff7.webp",
     rating: 92,
   },
   {
@@ -131,7 +131,7 @@ const psgames = [
     platform: "Playstation 1",
     year: 1998,
     description: "A revolutionary stealth action game.",
-    image: "assets/images/#",
+    image: "assets/images/games/mgs.webp",
     rating: 94,
   },
   {
@@ -139,7 +139,7 @@ const psgames = [
     platform: "Playstation 2",
     year: 2004,
     description: "An open-world action-adventure classic.",
-    image: "assets/images/#",
+    image: "assets/images/games/gtasa.webp",
     rating: 93,
   },
   {
@@ -147,7 +147,7 @@ const psgames = [
     platform: "Playstation 2",
     year: 2005,
     description: "An atmospheric action-adventure game.",
-    image: "assets/images/#",
+    image: "assets/images/games/sotc.webp",
     rating: 91,
   },
   {
@@ -155,7 +155,7 @@ const psgames = [
     platform: "Playstation 3",
     year: 2009,
     description: "An action-adventure game with cinematic storytelling.",
-    image: "assets/images/#",
+    image: "assets/images/games/u2at.webp",
     rating: 96,
   },
   {
@@ -163,7 +163,7 @@ const psgames = [
     platform: "Playstation 3",
     year: 2013,
     description: "A post-apocalyptic action-adventure masterpiece.",
-    image: "assets/images/#",
+    image: "assets/images/games/tlou.webp",
     rating: 95,
   },
   {
@@ -171,7 +171,7 @@ const psgames = [
     platform: "Playstation 4",
     year: 2017,
     description: "An open-world action RPG with unique gameplay.",
-    image: "assets/images/#",
+    image: "assets/images/games/hzd.webp",
     rating: 89,
   },
   {
@@ -179,7 +179,7 @@ const psgames = [
     platform: "Playstation 4",
     year: 2018,
     description: "A reimagined action-adventure with a powerful narrative.",
-    image: "assets/images/#",
+    image: "assets/images/games/gow.webp",
     rating: 94,
   },
   {
@@ -187,7 +187,7 @@ const psgames = [
     platform: "Playstation 5",
     year: 2020,
     description: "A challenging action RPG with immersive atmosphere.",
-    image: "assets/images/#",
+    image: "assets/images/games/ds.webp",
     rating: 92,
   },
   {
@@ -196,7 +196,7 @@ const psgames = [
     year: 2021,
     description:
       "A visually stunning platformer with dimension-hopping gameplay.",
-    image: "assets/images/#",
+    image: "assets/images/games/rac.webp",
     rating: 90,
   },
 ];
@@ -208,7 +208,7 @@ const xboxgames = [
     year: 2001,
     description:
       "A revolutionary first-person shooter that defined a generation.",
-    image: "assets/images/#",
+    image: "assets/images/games/haloce.webp",
     rating: 92,
   },
   {
@@ -216,7 +216,7 @@ const xboxgames = [
     platform: "Xbox",
     year: 2004,
     description: "A unique action RPG with moral choices and consequences.",
-    image: "assets/images/#",
+    image: "assets/images/games/fable.webp",
     rating: 85,
   },
   {
@@ -225,7 +225,7 @@ const xboxgames = [
     year: 2006,
     description:
       "A gritty third-person shooter with intense cover-based combat.",
-    image: "assets/images/#",
+    image: "assets/images/games/gears.webp",
     rating: 91,
   },
   {
@@ -234,7 +234,7 @@ const xboxgames = [
     year: 2010,
     description:
       "A critically acclaimed space opera RPG with a compelling story.",
-    image: "assets/images/#",
+    image: "assets/images/games/me2.webp",
     rating: 96,
   },
   {
@@ -243,7 +243,7 @@ const xboxgames = [
     year: 2015,
     description:
       "A beautiful and emotional platformer with Metroidvania elements.",
-    image: "assets/images/#",
+    image: "assets/images/games/ori.webp",
     rating: 88,
   },
   {
@@ -252,7 +252,7 @@ const xboxgames = [
     year: 2018,
     description:
       "An open-world racing game with stunning visuals and dynamic seasons.",
-    image: "assets/images/#",
+    image: "assets/images/games/forza4.webp",
     rating: 92,
   }, 
   {
@@ -261,7 +261,7 @@ const xboxgames = [
     year: 2021,
     description:
       "The latest installment in the legendary Halo franchise, featuring an open-world campaign.",
-    image: "assets/images/#",
+    image: "assets/images/games/haloinf.webp",
     rating: 87,
   },
   {
@@ -270,7 +270,7 @@ const xboxgames = [
     year: 2021,
     description:
       "An open-world racing game set in Mexico, with stunning visuals and a vast world.",
-    image: "assets/images/#",
+    image: "assets/images/games/forza5.webp",
     rating: 92,
   },
 ];
@@ -281,7 +281,7 @@ const nsgames = [
     platform: "NES",
     year: 1986,
     description: "A groundbreaking adventure that started a legendary series.",
-    image: "assets/images/#",
+    image: "assets/images/games/tloz.webp",
     rating: 91,
   },
   {
@@ -289,7 +289,7 @@ const nsgames = [
     platform: "NES",
     year: 1988,
     description: "A platforming masterpiece with creative level design.",
-    image: "assets/images/#",
+    image: "assets/images/games/smb3.webp",
     rating: 93,
   },
   {
@@ -297,7 +297,7 @@ const nsgames = [
     platform: "SNES",
     year: 1991,
     description: "An epic adventure with memorable dungeons and puzzles.",
-    image: "assets/images/#",
+    image: "assets/images/games/tlozalttp.webp",
     rating: 95,
   },
   {
@@ -305,7 +305,7 @@ const nsgames = [
     platform: "SNES",
     year: 1994,
     description: "A classic action-adventure with exploration and atmosphere.",
-    image: "assets/images/#",
+    image: "assets/images/games/sm.webp",
     rating: 96,
   },
   {
@@ -313,7 +313,7 @@ const nsgames = [
     platform: "N64",
     year: 1996,
     description: "A revolutionary 3D platformer that defined a genre.",
-    image: "assets/images/#",
+    image: "assets/images/games/sm64.webp",
     rating: 94,
   },
   {
@@ -321,7 +321,7 @@ const nsgames = [
     platform: "N64",
     year: 1998,
     description: "A timeless adventure with groundbreaking gameplay.",
-    image: "assets/images/",
+    image: "assets/images/games/tlozoot.webp",
     rating: 99,
   },
   {
@@ -329,7 +329,7 @@ const nsgames = [
     platform: "Wii",
     year: 2007,
     description: "A gravity-defying platformer with innovative gameplay.",
-    image: "assets/images/#",
+    image: "assets/images/games/smg.webp",
     rating: 97,
   },
   {
@@ -338,7 +338,7 @@ const nsgames = [
     year: 2011,
     description:
       "An immersive adventure with motion controls and a compelling story.",
-    image: "assets/images/#",
+    image: "assets/images/games/tlozss.webp",
     rating: 90,
   },
   {
@@ -346,7 +346,7 @@ const nsgames = [
     platform: "Nintendo Switch",
     year: 2017,
     description: "An open-world adventure that redefined the Zelda series.",
-    image: "assets/images/#",
+    image: "assets/images/games/tlozbotw.webp",
     rating: 97,
   },
   {
@@ -354,7 +354,7 @@ const nsgames = [
     platform: "Nintendo Switch",
     year: 2017,
     description: "A delightful 3D platformer with creative gameplay mechanics.",
-    image: "assets/images/#",
+    image: "assets/images/games/smo.webp",
     rating: 97,
   },
 ];
