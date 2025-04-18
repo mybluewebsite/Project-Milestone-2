@@ -6,6 +6,10 @@ const wrapper = document.getElementById("wrapper");
 const lightModeSvg = document.querySelector("#mode-button svg:first-child");
 const darkModeSvg = document.querySelector("#mode-button svg:last-child");
 
+/**
+ * Enables dark mode by adding the 'darkmode' class to the body,
+ * storing the preference in localStorage, and updating the SVG icons.
+ */
 const enableDarkMode = () => {
   document.body.classList.add("darkmode");
   localStorage.setItem("darkmode", "active");
@@ -13,6 +17,10 @@ const enableDarkMode = () => {
   darkModeSvg.style.display = "block";
 };
 
+/**
+ * Disables dark mode by removing the 'darkmode' class from the body,
+ * removing the preference from localStorage, and updating the SVG icons.
+ */
 const disableDarkMode = () => {
   document.body.classList.remove("darkmode");
   localStorage.setItem("darkmode", null);
@@ -35,7 +43,7 @@ darkModeToggle.addEventListener("click", () => {
 
 /**
  * Loads content dynamically into the wrapper div based on the selected page.
- * @param {string} page - The name of the page to load.
+ * @param {string} page - The name of the page to load ('home', 'ps', 'ns', or 'xbox').
  */
 function pageSelect(page) {
   switch (page) {
@@ -46,7 +54,7 @@ function pageSelect(page) {
       wrapper.innerHTML = `
         <div class="ps-container">
           <a href="ps.html" id="ps-style">
-          <img src="assets/images/background_images/ps_girl.webp" alt="PlayStation 5"</a>
+          <img src="assets/images/background_images/ps_consoles.webp" alt="PlayStation 5"</a>
           <a href="ps-games.html" id="ps-games-style">
           <img src="assets/images/background_images/ps5_games.webp" alt="PlayStation 5 Games"</a>
         </div>
@@ -56,7 +64,7 @@ function pageSelect(page) {
       wrapper.innerHTML = `
       <div class="ns-container">
         <a href="ns.html" id="ns-style">
-        <img src="assets/images/background_images/ns_console.webp" alt="Nintendo Switch"</a>
+        <img src="assets/images/background_images/nintendo_consoles.webp" alt="Nintendo Switch"</a>
         <a href="ns-games.html" id="ns-games-style">
         <img src="assets/images/background_images/ns_games.webp" alt="Nintendo Switch Games"</a>
       </div>
@@ -66,7 +74,7 @@ function pageSelect(page) {
       wrapper.innerHTML = `
       <div class="xbox-container">
         <a href="xbox.html" id="xbox-style">
-        <img src="assets/images/background_images/xbox_console.webp" alt="Xbox Series X"</a>
+        <img src="assets/images/background_images/xbox_consoles.webp" alt="Xbox Series X"</a>
         <a href="xbox-games.html" id="xbox-games-style">
         <img src="assets/images/background_images/xbox_games.webp" alt="Xbox Series X Games"</a>
       </div>
@@ -254,7 +262,7 @@ const xboxgames = [
       "An open-world racing game with stunning visuals and dynamic seasons.",
     image: "assets/images/games/forza4.webp",
     rating: 92,
-  }, 
+  },
   {
     title: "Halo Infinite",
     platform: "Xbox Series X",
@@ -359,6 +367,11 @@ const nsgames = [
   },
 ];
 
+/**
+ * Displays a list of games in the specified HTML element.
+ * @param {Array} games - An array of game objects to display.
+ * @param {string} gameListId - The ID of the HTML element where the game list will be rendered.
+ */
 function displayGames(games, gameListId) {
   const gameList = document.getElementById(gameListId);
   gameList.innerHTML = "";
@@ -377,6 +390,12 @@ function displayGames(games, gameListId) {
   });
 }
 
+/**
+ * Sets up the event listener for the filter controls to filter and display games.
+ * @param {string} filterControlsId - The ID of the HTML element containing the filter buttons.
+ * @param {Array} games - The array of game objects to filter.
+ * @param {string} gameListId - The ID of the HTML element where the filtered game list will be displayed.
+ */
 function setupFilter(filterControlsId, games, gameListId) {
   const filterControls = document.getElementById(filterControlsId);
 
@@ -416,4 +435,16 @@ if (document.getElementById("game-list-xbox")) {
 if (document.getElementById("game-list-ps")) {
   displayGames(psgames, "game-list-ps");
   setupFilter("filter-controls-ps", psgames, "game-list-ps");
+}
+
+function openPlaystationURL() {
+  window.open("https://www.playstation.com/en-gb/playstation-history/1994-ps-one/", "_blank");
+}
+
+function openXboxURL() {
+  window.open("https://www.xbox.com/en-GB/consoles/all-consoles", "_blank");
+}
+
+function openNintendoURL() {
+  window.open("https://www.nintendo.com/en-gb/", "_blank");
 }

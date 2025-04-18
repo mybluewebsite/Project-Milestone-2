@@ -243,8 +243,9 @@ nav {
 }
 
 #ns-logo {
-  height: 50px;
-  width: 50px;
+  margin-left: 75px;
+  height: 60px;
+  width: 65px;
 }
 
 #xbox-logo {
@@ -262,15 +263,25 @@ nav {
 #ps-style img {
   border-radius: 20px;
   display: flex;
-  height: 600px;
+  height: 350px;
   margin-top: 60px;
+}
+
+#ps-style img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 #ps-games-style img {
   border-radius: 20px;
   display: flex;
-  height: 600px;
+  height: 350px;
   margin-top: 60px;
+}
+
+#ps-games-style img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .ns-container {
@@ -283,16 +294,26 @@ nav {
 #ns-style img {
   border-radius: 20px;
   display: flex;
-  height: 450px;
+  height: 350px;
   width: auto;
   margin-top: 60px;
+}
+
+#ns-style img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 #ns-games-style img {
   border-radius: 20px;
   display: flex;
-  height: 450px;
+  height: 350px;
   margin-top: 60px;
+}
+
+#ns-games-style img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 .xbox-container {
@@ -305,15 +326,25 @@ nav {
 #xbox-style img {
   border-radius: 20px;
   display: flex;
-  height: 450px;
+  height: 325px;
   margin-top: 60px;
+}
+
+#xbox-style img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 #xbox-games-style img {
   border-radius: 20px;
   display: flex;
-  height: 450px;
+  height: 325px;
   margin-top: 60px;
+}
+
+#xbox-games-style img:hover {
+  transform: scale(1.05);
+  transition: transform 0.3s ease-in-out;
 }
 
 /* timeline style */
@@ -566,7 +597,21 @@ body xbox-games.html {
     width: 100px;
     height: 100px;
   }
+
+  #ps-logo,
+  #ns-logo,
+  #xbox-logo {
+    margin-left: 75px;
+    height: 75px;
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 30px !important;
+  }
 }
+
 
 @media screen and (min-width: 1441px) and (max-width: 2560px) {
   #home-button,
@@ -582,17 +627,34 @@ body xbox-games.html {
   }
 
   .tile {
-    width: 80%;
-    height: 120%;
-    margin: 18px 18px;
+    width: 66%;
+    height: 57%;
+    margin: 12px 12px;
   }
 
   #wrapper {
-    margin-top: 100px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
   }
 
   .tile svg {
     width: 75px;
     height: 75px;
+  }
+
+  #ps-logo,
+  #ns-logo,
+  #xbox-logo {
+    margin-left: 75px;
+    height: 75px;
+    width: 100px;
+  }
+
+  h1 {
+    font-size: 2.5rem;
+    margin-top: 30px !important;
   }
 }
