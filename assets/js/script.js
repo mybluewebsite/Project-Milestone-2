@@ -437,14 +437,29 @@ if (document.getElementById("game-list-ps")) {
   setupFilter("filter-controls-ps", psgames, "game-list-ps");
 }
 
+/**
+ * Opens the PlayStation website in a new tab.
+ * @function openPlaystationURL
+ * @returns {void}
+ */
 function openPlaystationURL() {
   window.open("https://www.playstation.com/en-gb/playstation-history/1994-ps-one/", "_blank");
 }
 
+/**
+ * Opens the Xbox website in a new tab.
+ * @function openXboxURL
+ * @returns {void}
+ */
 function openXboxURL() {
   window.open("https://www.xbox.com/en-GB/consoles/all-consoles", "_blank");
 }
 
+/**
+ * Opens the Nintendo website in a new tab.
+ * @function openNintendoURL
+ * @returns {void}
+ */
 function openNintendoURL() {
   window.open("https://www.nintendo.com/en-gb/", "_blank");
 }
