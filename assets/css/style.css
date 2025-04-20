@@ -238,19 +238,21 @@ nav {
 }
 
 #ps-logo {
-  height: 40px;
-  width: 60px;
+  margin-left: 45px;
+  height: 50px;
+  width: 70px;
 }
 
 #ns-logo {
-  margin-left: 75px;
+  margin-left: 60px;
   height: 60px;
-  width: 65px;
+  width: 60px;
 }
 
 #xbox-logo {
+  margin-left: 50px;
   height: 30px;
-  width: 30px;
+  width: 45px;
 }
 
 .ps-container {
@@ -568,6 +570,25 @@ body xbox-games.html {
     width: 70px;
     height: 70px;
   }
+
+  #ps-logo {
+    margin-left: 60px;
+    height: 67px;
+    width: 90px;
+  }
+
+  #ns-logo {
+    margin-left: 75px;
+    height: 67px;
+    width: 67px;
+  }
+
+  #xbox-logo {
+    margin-left: 60px;
+    margin-top: 5px;
+    height: 45px;
+    width: 75px;
+  }
 }
 
 @media screen and (min-width: 1025px) and (max-width: 1440px) {
@@ -598,18 +619,30 @@ body xbox-games.html {
     height: 100px;
   }
 
-  #ps-logo,
-  #ns-logo,
-  #xbox-logo {
-    margin-left: 75px;
-    height: 75px;
-    width: 100px;
-  }
-
   h1 {
     font-size: 2.5rem;
     margin-top: 30px !important;
   }
+
+  #ps-logo {
+    margin-left: 80px;
+    height: 70px;
+    width: 90px;
+  }
+
+  #ns-logo {
+    margin-left: 90px;
+    height: 90px;
+    width: 80px;
+  }
+
+  #xbox-logo {
+    margin-left: 80px;
+    margin-top: 5px;
+    height: 57px;
+    width: 90px;
+  }
+  
 }
 
 
@@ -645,12 +678,23 @@ body xbox-games.html {
     height: 75px;
   }
 
-  #ps-logo,
-  #ns-logo,
+  #ps-logo {
+    margin-left: 80px;
+    height: 70px;
+    width: 90px;
+  }
+
+  #ns-logo {
+    margin-left: 90px;
+    height: 90px;
+    width: 80px;
+  }
+
   #xbox-logo {
-    margin-left: 75px;
-    height: 75px;
-    width: 100px;
+    margin-left: 80px;
+    margin-top: 5px;
+    height: 57px;
+    width: 90px;
   }
 
   h1 {
