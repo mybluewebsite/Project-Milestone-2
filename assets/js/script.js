@@ -463,3 +463,19 @@ function openXboxURL() {
 function openNintendoURL() {
   window.open("https://www.nintendo.com/en-gb/", "_blank");
 }
+
+
+$(document).ready(function() {
+  $('#ps-timeline-carousel').carousel({
+    interval: 5000,
+    wrap: true
+  });
+  $('#xbox-timeline-carousel').carousel({
+    interval: 5000,
+    wrap: true
+  });
+  $('#nintendo-timeline-carousel').carousel({
+    interval: 5000,
+    wrap: true
+  });
+});

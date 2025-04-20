@@ -366,8 +366,9 @@ nav {
 }
 
 .timeline-image {
-  width: 350px;
-  border-radius: 10px;
+  max-height: 240px;
+  object-fit: contain;
+  width: 100%;
   margin-bottom: 15px;
 }
 
@@ -483,6 +484,13 @@ body xbox-games.html {
 
 .game-details button:hover {
   background-color: #e91e63;
+}
+
+/* Carousel styles */
+
+.carousel-item {
+  text-align: center;
+  padding: 20px;
 }
 
 /* Responsive styles */

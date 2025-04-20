@@ -78,75 +78,104 @@
           of gaming.
         </p>
         <br />
-        <div class="timeline">
-          <div class="timeline-item" data-year="2001">
-            <img
-              src="assets/images/xbox/xbox.webp"
-              alt="Xbox"
-              class="timeline-image"
-            />
-            <h2>Xbox (2001)</h2>
-            <p>
-              Microsoft's debut console, the Xbox, brought powerful hardware and
-              online gaming with Xbox Live. It introduced groundbreaking titles
-              like Halo: Combat Evolved.
-            </p>
+        <div
+          id="xbox-timeline-carousel"
+          class="carousel slide"
+          data-bs-ride="carousel"
+        >
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <div class="timeline-item" data-year="2001">
+                <img
+                  src="assets/images/xbox/xbox.webp"
+                  alt="Xbox"
+                  class="timeline-image"
+                />
+                <h2>Xbox (2001)</h2>
+                <p>
+                  Microsoft's debut console, the Xbox, brought powerful hardware
+                  and online gaming with Xbox Live. It introduced groundbreaking
+                  titles like Halo: Combat Evolved.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="timeline-item" data-year="2005">
+                <img
+                  src="assets/images/xbox/xbox360.webp"
+                  alt="Xbox 360"
+                  class="timeline-image"
+                />
+                <h2>Xbox 360 (2005)</h2>
+                <p>
+                  The Xbox 360 solidified Xbox's place in gaming with its
+                  enhanced online capabilities, Xbox Live Arcade, and iconic
+                  games like Gears of War and Mass Effect.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="timeline-item" data-year="2013">
+                <img
+                  src="assets/images/xbox/xboxone.webp"
+                  alt="Xbox One"
+                  class="timeline-image"
+                />
+                <h2>Xbox One (2013)</h2>
+                <p>
+                  The Xbox One focused on entertainment integration and
+                  introduced innovative features like Kinect and Xbox Game Pass,
+                  expanding the Xbox ecosystem.
+                </p>
+              </div>
+            </div>
+            <div class="carousel-item">
+              <div class="timeline-item" data-year="2020">
+                <img
+                  src="assets/images/xbox/xboxx.webp"
+                  alt="Xbox Series X"
+                  class="timeline-image"
+                />
+                <h2>Xbox Series X (2020)</h2>
+                <p>
+                  The latest generation of Xbox consoles, the Series X and
+                  Series S, deliver unparalleled performance, ray tracing, and
+                  seamless backward compatibility, pushing gaming to new
+                  heights.
+                </p>
+              </div>
+            </div>
           </div>
-
-          <div class="timeline-item" data-year="2005">
-            <img
-              src="assets/images/xbox/xbox360.webp"
-              alt="Xbox 360"
-              class="timeline-image"
-            />
-            <h2>Xbox 360 (2005)</h2>
-            <p>
-              The Xbox 360 solidified Xbox's place in gaming with its enhanced
-              online capabilities, Xbox Live Arcade, and iconic games like Gears
-              of War and Mass Effect.
-            </p>
-          </div>
-
-          <div class="timeline-item" data-year="2013">
-            <img
-              src="assets/images/xbox/xboxone.webp"
-              alt="Xbox One"
-              class="timeline-image"
-            />
-            <h2>Xbox One (2013)</h2>
-            <p>
-              The Xbox One focused on entertainment integration and introduced
-              innovative features like Kinect and Xbox Game Pass, expanding the
-              Xbox ecosystem.
-            </p>
-          </div>
-
-          <div class="timeline-item" data-year="2020">
-            <img
-              src="assets/images/xbox/xboxx.webp"
-              alt="Xbox Series X"
-              class="timeline-image"
-            />
-            <h2>Xbox Series X (2020)</h2>
-            <p>
-              The latest generation of Xbox consoles, the Series X and Series S,
-              deliver unparalleled performance, ray tracing, and seamless
-              backward compatibility, pushing gaming to new heights.
-            </p>
-          </div>
-          <br />
           <button
-            class="learn-more-btn"
-            data-page="Xbox"
-            onclick="openXboxURL()"
-            target="_blank"
-            rel="noopener noreferrer"
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#xbox-timeline-carousel"
+            data-bs-slide="prev"
           >
-            Learn More
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#xbox-timeline-carousel"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
           </button>
         </div>
+        <br />
+        <button
+          class="learn-more-btn"
+          data-page="Xbox"
+          onclick="openXboxURL()"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+          Learn More
+        </button>
       </section>
-
       <div id="wrapper"></div>
     </main>
 
