@@ -443,7 +443,10 @@ if (document.getElementById("game-list-ps")) {
  * @returns {void}
  */
 function openPlaystationURL() {
-  window.open("https://www.playstation.com/en-gb/playstation-history/1994-ps-one/", "_blank");
+  window.open(
+    "https://www.playstation.com/en-gb/playstation-history/1994-ps-one/",
+    "_blank"
+  );
 }
 
 /**
@@ -464,18 +467,35 @@ function openNintendoURL() {
   window.open("https://www.nintendo.com/en-gb/", "_blank");
 }
 
-
-$(document).ready(function() {
-  $('#ps-timeline-carousel').carousel({
+/**
+ * @file Initializes Bootstrap carousels for the PlayStation, Xbox, and Nintendo timelines.
+ *
+ * @description This function uses jQuery to target specific HTML elements by their ID
+ * and initialize them as Bootstrap carousels.  The carousels are configured with a
+ * 5-second interval between slides and are set to loop continuously.  This script
+ * should be included in a web page that uses Bootstrap's carousel functionality
+ * and contains elements with the IDs 'ps-timeline-carousel',
+ * 'xbox-timeline-carousel', and 'nintendo-timeline-carousel'.
+ *
+ * @requires jQuery
+ * @requires Bootstrap
+ *
+ * @function
+ * @listens document#ready
+ *
+ * @returns {void}
+ */
+document.ready(function () {
+  "#ps-timeline-carousel".carousel({
     interval: 5000,
-    wrap: true
+    wrap: true,
   });
-  $('#xbox-timeline-carousel').carousel({
+  "#xbox-timeline-carousel".carousel({
     interval: 5000,
-    wrap: true
+    wrap: true,
   });
-  $('#nintendo-timeline-carousel').carousel({
+  "#nintendo-timeline-carousel".carousel({
     interval: 5000,
-    wrap: true
+    wrap: true,
   });
 });
