@@ -10,37 +10,38 @@ This is my first project milestone I've had to complete as part of Code Institut
 
 ![frontpage](assets/images/project_1_frontpage.png)
 
-------
+---
 
 ## Table of contents
 
 1. UX
+
    - User stories
 
 2. Design
+
    - Wireframes
 
-2. Features
+3. Features
+
    - Existing features
    - Future features
 
-3. Technologies used
-   
-4. Testing
+4. Technologies used
+5. Testing
    - Broswer testing
    - Code validation
    - Lighthouse testing
    - JShint
-   
-5. Deployment
+6. Deployment
 
-6. Credits and References
+7. Credits and References
    - Code
    - Content
    - Media
    - Acknowledgements
 
-------
+---
 
 ## 1. UX
 
@@ -54,8 +55,6 @@ The website's design emphasizes a minimalist and clean aesthetic, drawing inspir
 
 ### Wireframe
 
-[Wireframe](assets/project_milestone_1_template.bmpr)
-
 1. Mobile Wireframe
 
 ![Wireframe Mobile](assets/images/wireframe_mobile.png)
@@ -64,32 +63,105 @@ The website's design emphasizes a minimalist and clean aesthetic, drawing inspir
 
 ![Wireframe Desktop](assets/images/wireframe_desktop.png)
 
-------
+---
 
 ## 2. Features
 
 ### Existing Features
 
-- __Navigation Bar__
+__Frontpage GIFs__
 
-  - Identically featured on all three pages, the full responsive navigation bar includes links to the "About me", "Work Experience", and "Contact" pages and a seperate link to the "Download CV" button.
-  - Allows the user to easily navigate from page to page across all devices without having to use a "back" button.
- 
-- __Responsiveness__
+  - The use of GIFs on hover for the frontpage image tiles enhances the users' experience, promoting interactivity and engagement.
+  
+  ![PlayStation GIF]()
+  ![Nintendo GIF]()
+  ![Xbox GIF]()
 
-   - The website is completely responsive on all devices from 280px to 1440 px.
- 
-- __The Footer__ 
+__Wrapper__
+
+  - Content is loaded using a wrapper instead of separate pages for a more dynamic user experience.
+
+```
+/**
+ * Loads content dynamically into the wrapper div based on the selected page.
+ * @param {string} page - The name of the page to load ('home', 'ps', 'ns', or 'xbox').
+ */
+function pageSelect(page) {
+  switch (page) {
+    case "home":
+      window.location.reload();
+      break;
+    case "ps":
+      wrapper.innerHTML = `
+        <div class="ps-container">
+          <a href="ps.html" id="ps-style">
+          <img src="assets/images/background_images/ps_consoles.webp" alt="PlayStation 5"</a>
+          <a href="ps-games.html" id="ps-games-style">
+          <img src="assets/images/background_images/ps5_games.webp" alt="PlayStation 5 Games"</a>
+        </div>
+      `;
+      break;
+    case "ns":
+      wrapper.innerHTML = `
+      <div class="ns-container">
+        <a href="ns.html" id="ns-style">
+        <img src="assets/images/background_images/nintendo_consoles.webp" alt="Nintendo Switch"</a>
+        <a href="ns-games.html" id="ns-games-style">
+        <img src="assets/images/background_images/ns_games.webp" alt="Nintendo Switch Games"</a>
+      </div>
+      `;
+      break;
+    case "xbox":
+      wrapper.innerHTML = `
+      <div class="xbox-container">
+        <a href="xbox.html" id="xbox-style">
+        <img src="assets/images/background_images/xbox_consoles.webp" alt="Xbox Series X"</a>
+        <a href="xbox-games.html" id="xbox-games-style">
+        <img src="assets/images/background_images/xbox_games.webp" alt="Xbox Series X Games"</a>
+      </div>
+      `;
+      break;
+    default:
+      console.error(`Invalid page selected: ${page}`);
+      wrapper.innerHTML = `
+        <h1>Page Not Found</h1>
+        <br>
+        <p>The requested page could not be found.</p>
+      `;
+  }
+}
+```
+__Consoles Carousel__
+
+  - By incorporating carousels, the website offers a more enjoyable and playful experience, benefiting user experience.
+
+  ![Console carousel]()
+
+  ```
+
+  ```
+
+__Games Filtering__
+
+  - The website features a game filter that lets you view different consoles and quickly find the two top-rated games for each one.
+
+  ![Game filtering]()
+
+  ```
+  
+  ```
+
+- ***
 
   - This section includes links to the relevant social media sites. Opening in a new tab and allowing complete ease of access for the user.
- 
+
 ### Future Features
 
-- __Skills__
+- **Skills**
 
   - A "Technical Skills" page is yet to be added.
 
-------
+---
 
 ## 3. Technologies used
 
@@ -101,31 +173,31 @@ The website's design emphasizes a minimalist and clean aesthetic, drawing inspir
 ### Framework, Libraries, and programs used
 
 1. [Bootstrap 5.3:](https://getbootstrap.com/)
-      - Bootstrap has been used for overall formatting of the webpage.
+   - Bootstrap has been used for overall formatting of the webpage.
 2. [Google Fonts:](https://fonts.google.com/)
-      - Google Fonts provided me with the 3 different fonts I have used.
+   - Google Fonts provided me with the 3 different fonts I have used.
 3. [Font Awesome:](https://fontawesome.com/)
-      - Font Awesome allowed me to use the icons required for the footer section.
+   - Font Awesome allowed me to use the icons required for the footer section.
 4. [Gitpod:](https://www.gitpod.io/)
-      - GitPod was used to write the code and commit and push to gitHub.
+   - GitPod was used to write the code and commit and push to gitHub.
 5. [GitHub:](https://github.com/)
-      - GitHub is used to store and interact with the code once pushed from gitPod.
+   - GitHub is used to store and interact with the code once pushed from gitPod.
 6. [Balsamiq:](https://balsamiq.com/)
-      - Balsamiq has been used create the [wireframes](assets/project_milestone_1_template.bmpr) prior to writing the code.
+   - Balsamiq has been used create the [wireframes](assets/project_milestone_1_template.bmpr) prior to writing the code.
 7. [Fontjoy:](https://fontjoy.com/)
-      - Fontjoy was used to generate 3 random font pairings.
+   - Fontjoy was used to generate 3 random font pairings.
 8. [Coolors:](https://coolors.co/)
-      - Coolors was used to generate random colour pairings for the overall design of the website.
+   - Coolors was used to generate random colour pairings for the overall design of the website.
 9. [Hover.css:](https://ianlunn.github.io/Hover/)
-      - Hover.css has been used to add the float transition to the social links in the footer section.
+   - Hover.css has been used to add the float transition to the social links in the footer section.
 10. [CSS autoprefixer:](https://autoprefixer.github.io/)
-      - Autoprefixer parsed my CSS and added vendor prefixes.
+    - Autoprefixer parsed my CSS and added vendor prefixes.
 11. [Pexels:](https://www.pexels.com/)
-      - Pexels has been used for the addition of stock photos.
+    - Pexels has been used for the addition of stock photos.
 
-------
+---
 
-## 4. Testing 
+## 4. Testing
 
 1. [HTML validator](https://validator.w3.org/)
 2. [CSS validator](https://jigsaw.w3.org/css-validator/)
@@ -135,30 +207,32 @@ The website's design emphasizes a minimalist and clean aesthetic, drawing inspir
 - A large amount of testing has been carried out to ensure that there is full responsiveness for all device types.
 - Family members viewed the site on their mobile devices and provided feedback throughout.
 
-### Validator Testing 
+### Validator Testing
 
 1. HTML Validator Results
    - Initially there were a few issues with the HTML code (seen below), these errors have since been corrected.
-!["About Me" validator results](assets/images/index_validator_results.png)
-!["Work Experience" validator results](assets/images/work_validator_results.png)
-!["Contact" validator results](assets/images/contact_validator_results.png)
-   
+     !["About Me" validator results](assets/images/index_validator_results.png)
+     !["Work Experience" validator results](assets/images/work_validator_results.png)
+     !["Contact" validator results](assets/images/contact_validator_results.png)
 2. CSS Validator Results
+
    - No CSS errors found, there are multiple warnings referencing the vendor prefixes (seen below).
-![CSS validator results](assets/images/css_validator_results.png)
-![CSS warnings](assets/images/css_warnings.png)
+     ![CSS validator results](assets/images/css_validator_results.png)
+     ![CSS warnings](assets/images/css_warnings.png)
 
 3. Lighthouse Testing
+
    - All pages have been tested using "Lighthouse" testing within Google Chrome "Developer tools". All pages scored well within the 90's.
-![Lighthouse Report](assets/images/lighthouse_results.png)
+     ![Lighthouse Report](assets/images/lighthouse_results.png)
 
 4. Wave Testing
-   - All pages have been tested using [Wave](https://wave.webaim.org/). No errors were found.
-![Frontpage Wave Results](assets/images/wave_frontpage.png)
-![Work experience Wave Results](assets/images/wave_work.png)
-![Contact form Wave Results](assets/images/wave_contact.png)
 
-6. Manual Testing
+   - All pages have been tested using [Wave](https://wave.webaim.org/). No errors were found.
+     ![Frontpage Wave Results](assets/images/wave_frontpage.png)
+     ![Work experience Wave Results](assets/images/wave_work.png)
+     ![Contact form Wave Results](assets/images/wave_contact.png)
+
+5. Manual Testing
    - Selecting the navbar elements takes you to their respective pages.
    - Selecting "Download CV" downloads and opens the CV in a new tab.
    - Selecting either of the social links takes you to their respective webpages.
@@ -170,36 +244,38 @@ The website's design emphasizes a minimalist and clean aesthetic, drawing inspir
 - Added a ":focus-within" pseudo-class as an attempt to change the blue box shadow of the input forms on the contact page.
 - When running "Lighthouse" on the frontpage, the aspect-ratio of the hero img is incorrect and decreases overall performance score.
 
-------
+---
 
 ## 5. Deployment
 
 ### GitHub Pages
-- The site was deployed to GitHub pages. The steps to deploy are as follows: 
+
+- The site was deployed to GitHub pages. The steps to deploy are as follows:
   - In the specific [GitHub repository](https://github.com/), navigate to the "Settings" tab.
   - Scroll down until you see "pages" on the left-hand side.
   - From the "Branch" sub-section, under the "Build and Deployment" section, from the drop-down menu, select "main" and save.
   - You will find the deployed site under "Github Pages" showing your live site and it's URL, allowing you to navigate to the deployed website.
 
 ### Forking your GitHub Repository
+
 - To make a copy of the original version so you can view and edit within your own GitHub repositories, you should do the following:
-   - Locate the [GitHub repository](https://github.com/) in question.
-   - At the top of the page, below the main menu, you will find the "Fork" button.
-   - Select "Create a new fork" which will rediredct you to another page where you can change the description and title.
-   - Select "Create fork" which will make a copy in your own GitHub repository.
+  - Locate the [GitHub repository](https://github.com/) in question.
+  - At the top of the page, below the main menu, you will find the "Fork" button.
+  - Select "Create a new fork" which will rediredct you to another page where you can change the description and title.
+  - Select "Create fork" which will make a copy in your own GitHub repository.
 
 The live link can be found [here](https://mybluewebsite.github.io/Project_Milestone_1/index.html).
 
-------
+---
 
-## 6. Credits 
+## 6. Credits
 
-### Content 
+### Content
 
 - "Lorem ipsum" used as placeholder text throughout the website.
 - The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
 - [Google](https://www.google.com/) has been used to create a "::before" pseudo-class for the "Frequently Asked Questions" section to replace the bullet-points.
-![seen here](assets/images/code_snippet.png)
+  ![seen here](assets/images/code_snippet.png)
 
 ### Media
 

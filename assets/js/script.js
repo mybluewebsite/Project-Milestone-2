@@ -485,17 +485,17 @@ function openNintendoURL() {
  *
  * @returns {void}
  */
-document.ready(function () {
-  "#ps-timeline-carousel".carousel({
+window.onload = function () {
+  $("#ps-timeline-carousel").carousel({
     interval: 5000,
     wrap: true,
   });
-  "#xbox-timeline-carousel".carousel({
+  $("#xbox-timeline-carousel").carousel({
     interval: 5000,
     wrap: true,
   });
-  "#nintendo-timeline-carousel".carousel({
+  $("#nintendo-timeline-carousel").carousel({
     interval: 5000,
     wrap: true,
   });
-});
+};
