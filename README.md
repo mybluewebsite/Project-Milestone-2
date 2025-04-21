@@ -244,6 +244,7 @@ function displayGames(games, gameListId) {
 
 1. [HTML5](https://en.wikipedia.org/wiki/HTML)
 2. [CSS3](https://en.wikipedia.org/wiki/CSS)
+3. [JavaScript]()
 
 ### Framework, Libraries, and programs used
 
