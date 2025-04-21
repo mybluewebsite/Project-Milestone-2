@@ -50,7 +50,7 @@ This website aims to inform users about highly-rated games from top-tier PlaySta
 
 ## 2. Design
 
-
+The website's design emphasizes a minimalist and clean aesthetic, drawing inspiration from the color palettes of the consoles themselves. This approach is balanced with elements of fun and creativity. The site incorporates both light and dark modes, and features large, user-friendly icons to enhance accessibility. Originally, console and game pages were structured as lists, but were redesigned using carousels to provide a more engaging and dynamic user experience.
 
 ### Wireframe
 
