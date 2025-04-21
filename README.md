@@ -15,8 +15,9 @@ This is my first project milestone I've had to complete as part of Code Institut
 ## Table of contents
 
 1. UX
-   - Project goals
-   - Design choices
+   - User stories
+
+2. Design
    - Wireframes
 
 2. Features
@@ -26,10 +27,14 @@ This is my first project milestone I've had to complete as part of Code Institut
 3. Technologies used
    
 4. Testing
+   - Broswer testing
+   - Code validation
+   - Lighthouse testing
+   - JShint
    
 5. Deployment
 
-6. Credits
+6. Credits and References
    - Code
    - Content
    - Media
@@ -39,17 +44,13 @@ This is my first project milestone I've had to complete as part of Code Institut
 
 ## 1. UX
 
-### Project goals
+### User Stories
 
-1. To create a website which was both responsive and fairly dynamic but also very simplistic.
-2. To showcase my skills in using HTML, CSS and Bootstrap only.
+This website aims to inform users about highly-rated games from top-tier PlayStation, Nintendo, and Xbox consoles. By creating an engaging and dynamic experience, the site intends to inspire users to explore new gaming experiences and discover titles they may have missed. Additionally, the website provides links to relevant web pages for users seeking more detailed information about specific games.
 
-### Design choices
+## 2. Design
 
-- Minimalist
-- Simplistic
-- Clean
-- Brief
+
 
 ### Wireframe
 
@@ -59,11 +60,7 @@ This is my first project milestone I've had to complete as part of Code Institut
 
 ![Wireframe Mobile](assets/images/wireframe_mobile.png)
 
-2. Tablet Wireframe
-
-![Wireframe Tablet](assets/images/wireframe_tablet.png)
-
-3. Desktop Wireframe
+2. Desktop Wireframe
 
 ![Wireframe Desktop](assets/images/wireframe_desktop.png)
 
