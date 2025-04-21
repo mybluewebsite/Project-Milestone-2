@@ -77,6 +77,36 @@ __Frontpage GIFs__
   ![Nintendo GIF]()
   ![Xbox GIF]()
 
+```
+const tiles = document.querySelectorAll(".tile");
+
+tiles.forEach((tile, index) => {
+  const gif = document.createElement("img");
+  gif.src = `assets/gifs/${index + 1}.gif`;
+  gif.loop = true;
+  gif.classList.add("gif-replacement");
+  gif.style.display = "none";
+
+  const existingContent = tile.innerHTML;
+  const contentWrapper = document.createElement("div");
+
+  contentWrapper.innerHTML = existingContent;
+  tile.innerHTML = "";
+  tile.appendChild(contentWrapper);
+  tile.appendChild(gif);
+
+  tile.addEventListener("mouseover", () => {
+    gif.style.display = "block";
+    contentWrapper.style.display = "none";
+  });
+
+  tile.addEventListener("mouseout", () => {
+    gif.style.display = "none";
+    contentWrapper.style.display = "block";
+  });
+});
+```
+
 __Wrapper__
 
   - Content is loaded using a wrapper instead of separate pages for a more dynamic user experience.
@@ -137,9 +167,40 @@ __Consoles Carousel__
 
   ![Console carousel]()
 
-  ```
-
-  ```
+```
+/**
+ * @file Initializes Bootstrap carousels for the PlayStation, Xbox, and Nintendo timelines.
+ *
+ * @description This function uses jQuery to target specific HTML elements by their ID
+ * and initialize them as Bootstrap carousels.  The carousels are configured with a
+ * 5-second interval between slides and are set to loop continuously.  This script
+ * should be included in a web page that uses Bootstrap's carousel functionality
+ * and contains elements with the IDs 'ps-timeline-carousel',
+ * 'xbox-timeline-carousel', and 'nintendo-timeline-carousel'.
+ *
+ * @requires jQuery
+ * @requires Bootstrap
+ *
+ * @function
+ * @listens document#ready
+ *
+ * @returns {void}
+ */
+window.onload = function () {
+  $("#ps-timeline-carousel").carousel({
+    interval: 5000,
+    wrap: true,
+  });
+  $("#xbox-timeline-carousel").carousel({
+    interval: 5000,
+    wrap: true,
+  });
+  $("#nintendo-timeline-carousel").carousel({
+    interval: 5000,
+    wrap: true,
+  });
+};
+```
 
 __Games Filtering__
 
@@ -147,19 +208,33 @@ __Games Filtering__
 
   ![Game filtering]()
 
-  ```
-  
-  ```
+```
+/**
+ * Displays a list of games in the specified HTML element.
+ * @param {Array} games - An array of game objects to display.
+ * @param {string} gameListId - The ID of the HTML element where the game list will be rendered.
+ */
+function displayGames(games, gameListId) {
+  const gameList = document.getElementById(gameListId);
+  gameList.innerHTML = "";
 
-- ***
-
-  - This section includes links to the relevant social media sites. Opening in a new tab and allowing complete ease of access for the user.
-
+  games.forEach((game) => {
+    const gameItem = document.createElement("li");
+    gameItem.classList.add("game-item");
+    gameItem.innerHTML = `
+      <img src="${game.image}" alt="${game.title}">
+      <div class="game-details">
+        <h3>${game.title} (${game.year})</h3>
+        <p>${game.description}</p>
+      </div>
+    `;
+    gameList.appendChild(gameItem);
+  });
+};
+```
 ### Future Features
 
-- **Skills**
-
-  - A "Technical Skills" page is yet to be added.
+- As a design enhancement, controller buttons will be implemented on the console and games pages. These interactive elements will allow users to easily navigate to different areas of the site, thereby reinforcing the website's overall objective.
 
 ---
 

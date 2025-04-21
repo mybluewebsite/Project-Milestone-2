@@ -120,8 +120,8 @@ tiles.forEach((tile, index) => {
 
 // Remove default classes from Bootstrap
 
-const element = document.querySelector(".bg-dark");
-element.classList.remove("bg-dark");
+const defaultClass = document.querySelector(".bg-dark");
+defaultClass.classList.remove("bg-dark");
 
 // JavaScript to dynamically load game data and filter it based on the selected platform.
 
@@ -388,7 +388,7 @@ function displayGames(games, gameListId) {
     `;
     gameList.appendChild(gameItem);
   });
-}
+};
 
 /**
  * Sets up the event listener for the filter controls to filter and display games.
@@ -499,3 +499,4 @@ window.onload = function () {
     wrap: true,
   });
 };
+
