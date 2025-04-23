@@ -17,14 +17,14 @@
   --playstation-red: #df0024;
   --playstation-yellow: #f3c300;
   --playstation-teal: #00ab9f;
-  --primary-colour: rgb(10, 10, 10);
-  --secondary-colour: rgb(240, 240, 240);
-  --secondary-accent-colour: rgb(187, 187, 187);
-  --primary-accent-colour: rgb(52, 52, 52);
-  --playstation-grey: rgb(187, 187, 187);
-  --playstation-black: rgb(40, 40, 43);
-  --xbox-green: rgb(12, 122, 31);
-  --nintendo-red: rgb(230, 0, 18);
+  --primary-colour: #0a0a0a;
+  --secondary-colour: #f0f0f0;
+  --secondary-accent-colour: #bbbbbb;
+  --primary-accent-colour: #343434;
+  --playstation-grey: #bbbbbb;
+  --playstation-black: #28282b;
+  --xbox-green: #0c7a1f;
+  --nintendo-red: #e60012;
 }
 
 .darkmode {
@@ -32,13 +32,12 @@
   --playstation-red: #df0024;
   --playstation-yellow: #f3c300;
   --playstation-teal: #00ab9f;
-  --secondary-colour: rgb(10, 10, 10);
-  --primary-colour: rgb(240, 240, 240);
-  --primary-accent-colour: rgb(187, 187, 187);
-  --secondary-accent-colour: rgb(52, 52, 52);
-  --playstation-grey: rgb(187, 187, 187);
-  --playstation-black: rgb(40, 40, 43);
-  --xbox360-green: rgb(146, 200, 62);
+  --secondary-colour: #0a0a0a;
+  --primary-colour: #f0f0f0;
+  --primary-accent-colour: #bbbbbb;
+  --secondary-accent-colour: #343434;
+  --playstation-grey: #bbbbbb;
+  --playstation-black: #28282b;
 }
 
 /* Global Styles */
@@ -542,7 +541,7 @@ nav {
 
 .learn-more-btn {
   padding: 10px 20px;
-  background-color: #ff4081;
+  background-color: #064110;
   color: white;
   border: none;
   border-radius: 5px;
@@ -550,7 +549,7 @@ nav {
 }
 
 .learn-more-btn:hover {
-  background-color: #e91e63;
+  background-color: #0c7a1f;
 }
 
 /* Game list styles */
@@ -565,7 +564,7 @@ body xbox-games.html {
 
 .h1 {
   text-align: center;
-  color: #ff4081;
+  color: #0c7a1f;
   text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   margin-bottom: 20px;
 }
@@ -647,7 +646,7 @@ body xbox-games.html {
 }
 
 .game-details button {
-  background-color: #ff4081;
+  background-color: #064110;
   color: white;
   border: none;
   padding: 8px 15px;
@@ -661,7 +660,7 @@ body xbox-games.html {
 }
 
 .game-details button:hover {
-  background-color: #e91e63;
+  background-color: #0c7a1f;
 }
 
 /* Carousel styles */
