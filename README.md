@@ -27,7 +27,11 @@ This is my first project milestone I've had to complete as part of Code Institut
    - Existing features
    - Future features
 
-4. Technologies used
+4. Technologies
+
+   - Languages
+   - Frameworks, libraries, and programs
+
 5. Testing
    - Broswer testing
    - Code validation
@@ -238,15 +242,15 @@ function displayGames(games, gameListId) {
 
 ---
 
-## 3. Technologies used
+## 3. Technologies
 
 ### Languages used
 
 1. [HTML5](https://en.wikipedia.org/wiki/HTML)
 2. [CSS3](https://en.wikipedia.org/wiki/CSS)
-3. [JavaScript]()
+3. [JavaScript](https://en.wikipedia.org/wiki/JavaScript)
 
-### Framework, Libraries, and programs used
+### Framework, libraries, and programs
 
 1. [Bootstrap 5.3:](https://getbootstrap.com/)
    - Bootstrap has been used for overall formatting of the webpage.
@@ -259,7 +263,7 @@ function displayGames(games, gameListId) {
 5. [GitHub:](https://github.com/)
    - GitHub is used to store and interact with the code once pushed from gitPod.
 6. [Balsamiq:](https://balsamiq.com/)
-   - Balsamiq has been used create the [wireframes](assets/project_milestone_1_template.bmpr) prior to writing the code.
+   - Balsamiq has been used create the [wireframes](assets/project_milestone_1_template.bmpr).
 7. [Fontjoy:](https://fontjoy.com/)
    - Fontjoy was used to generate 3 random font pairings.
 8. [Coolors:](https://coolors.co/)
@@ -270,18 +274,18 @@ function displayGames(games, gameListId) {
     - Autoprefixer parsed my CSS and added vendor prefixes.
 11. [Pexels:](https://www.pexels.com/)
     - Pexels has been used for the addition of stock photos.
+12. [JQuery:]()
+    - JQuery has been used for JavaScript elements.
 
 ---
 
 ## 4. Testing
 
-1. [HTML validator](https://validator.w3.org/)
-2. [CSS validator](https://jigsaw.w3.org/css-validator/)
-
-- The program has been tested on Google Chrome, Safari, and Microsoft Edge.
-- The website has been viewed and tested on a variety of devices Samsung S23, Google Pixel 7, tablets and laptops.
-- A large amount of testing has been carried out to ensure that there is full responsiveness for all device types.
-- Family members viewed the site on their mobile devices and provided feedback throughout.
+1. Validator testing
+2. Lighthouse testing
+3. JSHint testing
+4. Wave testing
+5. Manual testing
 
 ### Validator Testing
 
@@ -309,11 +313,14 @@ function displayGames(games, gameListId) {
      ![Contact form Wave Results](assets/images/wave_contact.png)
 
 5. Manual Testing
+
    - Selecting the navbar elements takes you to their respective pages.
    - Selecting "Download CV" downloads and opens the CV in a new tab.
    - Selecting either of the social links takes you to their respective webpages.
    - Clicking "Send" on the form without inputting data will bring up a caution message.
    - Clicking the arrows on the carousel on the "Work Experience" page will allow you to cylce through the images.
+
+The program is compatible with Chrome, Safari, and Microsoft Edge. The website has been thoroughly tested and is fully responsive across various devices, including Samsung S23, Google Pixel 7, tablets, and laptops. Feedback from mobile users was incorporated throughout the development process.
 
 ### Known Bugs
 
