@@ -95,6 +95,7 @@ const tiles = document.querySelectorAll(".tile");
 tiles.forEach((tile, index) => {
   const gif = document.createElement("img");
   gif.src = `assets/gifs/${index + 1}.gif`;
+  gif.alt = "Console GIF";
   gif.loop = true;
   gif.classList.add("gif-replacement");
   gif.style.display = "none";
