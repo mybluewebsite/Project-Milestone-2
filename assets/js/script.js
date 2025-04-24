@@ -383,7 +383,7 @@ function displayGames(games, gameListId) {
     gameItem.innerHTML = `
       <img src="${game.image}" alt="${game.title}">
       <div class="game-details">
-        <h3>${game.title} (${game.year})</h3>
+        <h2>${game.title} (${game.year})</h2>
         <p>${game.description}</p>
       </div>
     `;

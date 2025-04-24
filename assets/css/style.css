@@ -627,14 +627,14 @@ body xbox-games.html {
   box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.4);
 }
 
-.game-details h3 {
+.game-details h2 {
   color: var(--primary-colour);
   margin-bottom: 5px;
   text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
 }
 
 .game-details p {
-  font-size: 0.9em;
+  font-size: 1em;
   line-height: 1.5;
 }
 
