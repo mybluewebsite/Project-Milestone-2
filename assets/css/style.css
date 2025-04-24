@@ -669,14 +669,22 @@ body xbox-games.html {
   text-align: center;
 }
 
+.carousel-control-next-icon,
 .carousel-control-prev-icon {
-  background-color: #064110;
-  border-radius: 25%;
+  background-image: none;
+  color: var(--primary-colour);
+  display: inline-block;
 }
 
-.carousel-control-next-icon {
-  background-color: #064110;
-  border-radius: 25%;
+.carousel-control-prev-icon:after {
+  content: "<";
+  font-size: 3.5rem;
+  color: var(--primary-colour);
+}
+.carousel-control-next-icon:after {
+  content: ">";
+  font-size: 3.5rem;
+  color: var(--primary-colour);
 }
 
 /* Responsive styles */
