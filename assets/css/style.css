@@ -577,7 +577,7 @@ body xbox-games.html {
 }
 
 .filter-button {
-  background-color: #193B61;
+  background-color: #064110;
   color: white;
   border: none;
   padding: 10px 20px;
@@ -593,7 +593,7 @@ body xbox-games.html {
 
 .filter-button:hover,
 .filter-button.active {
-  background-color: var(--playstation-blue);
+  background-color: var(--xbox-green);
 }
 
 .game-list-ps,
