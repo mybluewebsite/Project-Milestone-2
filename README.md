@@ -33,7 +33,7 @@ This is my first project milestone I've had to complete as part of Code Institut
    - Frameworks, libraries, and programs
 
 5. Testing
-   - Broswer testing
+   - Browser testing
    - Code validation
    - Lighthouse testing
    - JShint
@@ -274,7 +274,7 @@ function displayGames(games, gameListId) {
     - Autoprefixer parsed my CSS and added vendor prefixes.
 11. [Pexels:](https://www.pexels.com/)
     - Pexels has been used for the addition of stock photos.
-12. [JQuery:]()
+12. [JQuery:](https://jquery.com/)
     - JQuery has been used for JavaScript elements.
 
 ---
@@ -290,27 +290,20 @@ function displayGames(games, gameListId) {
 ### Validator Testing
 
 1. HTML Validator Results
-   - Initially there were a few issues with the HTML code (seen below), these errors have since been corrected.
-     !["About Me" validator results](assets/images/index_validator_results.png)
-     !["Work Experience" validator results](assets/images/work_validator_results.png)
-     !["Contact" validator results](assets/images/contact_validator_results.png)
+   - 
+
 2. CSS Validator Results
 
-   - No CSS errors found, there are multiple warnings referencing the vendor prefixes (seen below).
-     ![CSS validator results](assets/images/css_validator_results.png)
-     ![CSS warnings](assets/images/css_warnings.png)
+   - 
 
 3. Lighthouse Testing
 
-   - All pages have been tested using "Lighthouse" testing within Google Chrome "Developer tools". All pages scored well within the 90's.
-     ![Lighthouse Report](assets/images/lighthouse_results.png)
+   - 
 
 4. Wave Testing
 
    - All pages have been tested using [Wave](https://wave.webaim.org/). No errors were found.
-     ![Frontpage Wave Results](assets/images/wave_frontpage.png)
-     ![Work experience Wave Results](assets/images/wave_work.png)
-     ![Contact form Wave Results](assets/images/wave_contact.png)
+     - 
 
 5. Manual Testing
 
