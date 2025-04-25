@@ -125,6 +125,14 @@ header {
   fill: var(--primary-accent-colour);
 }
 
+#frontpage-title {
+  font-family: var(--primary-font);
+  font-size: 1.2rem;
+  color: var(--primary-colour);
+  margin: 0px;
+  padding: 0px;
+}
+
 .container {
   width: 90%;
   max-width: 680px;
@@ -690,15 +698,24 @@ body xbox-games.html {
   }
 }
 
+@media screen and (max-width: 576px) {
+  #frontpage-title h1 {
+    font-size: 1.4rem;
+    padding: 0.25rem;
+    margin-top: 60px;
+  }
+
+  #frontpage-title p {
+    font-size: 0.8rem;
+    padding: 0.25rem;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .tile {
     width: 90%;
     height: 160%;
     margin: 12px 12px;
-  }
-
-  #wrapper {
-    margin-top: 60px;
   }
 
   .game-item {
@@ -741,12 +758,22 @@ body xbox-games.html {
     width: 100%;
     height: auto;
   }
+
+  #frontpage-title h1 {
+    font-size: 1.6rem;
+    padding: 0.5rem;
+  }
+
+  #frontpage-title p {
+    font-size: 0.9rem;
+    padding: 0.5rem;
+  }
 }
 
 @media screen and (min-width: 769px) and (max-width: 1024px) {
   .tile {
     width: 80%;
-    height: 80%;
+    height: 100%;
     margin: 12px 12px;
   }
 
@@ -754,10 +781,6 @@ body xbox-games.html {
   #mode-button {
     width: 60px;
     height: 60px;
-  }
-
-  #wrapper {
-    margin-top: 60px;
   }
 
   .game-item {
@@ -816,13 +839,13 @@ body xbox-games.html {
 
   .tile {
     width: 70%;
-    height: 70%;
+    height: 100%;
     margin: 12px 12px;
   }
 
-  #wrapper {
+  /*#wrapper {
     margin-top: 100px;
-  }
+  }*/
 
   .tile svg {
     width: 100px;
@@ -869,7 +892,7 @@ body xbox-games.html {
 
   .tile {
     width: 66%;
-    height: 57%;
+    height: 85%;
     margin: 12px 12px;
   }
 
