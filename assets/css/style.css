@@ -688,6 +688,26 @@ body xbox-games.html {
   color: var(--primary-colour);
 }
 
+/* Footer styles */
+
+/* footer {
+  background-color: var(--secondary-accent-colour);
+  color: var(--primary-colour);
+  text-align: center;
+  padding: 20px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+  font-family: var(--primary-font);
+}
+
+footer .container-fluid {
+  margin: 0;
+  padding: 0;
+}
+
+*/
+
 /* Responsive styles */
 
 @media screen and (max-width: 425px) {
@@ -842,10 +862,6 @@ body xbox-games.html {
     height: 100%;
     margin: 12px 12px;
   }
-
-  /*#wrapper {
-    margin-top: 100px;
-  }*/
 
   .tile svg {
     width: 100px;
