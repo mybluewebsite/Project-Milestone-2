@@ -279,7 +279,7 @@ const xboxgames = [
     year: 2021,
     description:
       "An open-world racing game set in Mexico, with stunning visuals and a vast world.",
-    image: "assets/images/games/forza5.webp",
+    image: "assets/images/games/forzah5.webp",
     rating: 92,
   },
 ];
