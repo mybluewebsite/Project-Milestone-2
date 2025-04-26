@@ -328,7 +328,7 @@ nav {
 #ps-logo {
   margin-left: 45px;
   height: 50px;
-  width: 70px;
+  width: 70px; 
 }
 
 #ns-logo {
@@ -574,7 +574,6 @@ body xbox-games.html {
   max-width: 960px;
   margin: 20px auto;
   padding: 20px;
-  border-radius: 8px;
 }
 
 #filter-controls-ns,
@@ -686,6 +685,52 @@ body xbox-games.html {
   content: ">";
   font-size: 3.5rem;
   color: var(--primary-colour);
+}
+
+/* Form styles */
+
+form {
+  width: 75%;
+  margin: 20px auto;
+  padding: 20px;
+  border: 1px solid var(--primary-colour);
+  border-radius: 5px;
+  font-family: var(--secondary-font);
+  font-size: x-large;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+input[type="text"] {
+  width: 100%;
+  padding: 8px;
+  margin-bottom: 10px;
+  border: 1px solid var(--primary-colour);
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+form button {
+  background-color: #026412;
+  color: #F0F0F0;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: large;
+}
+
+form button:hover {
+  background-color: #0c7a1f;
+}
+
+#submissionMessage {
+  padding: 10px;
+  border: 1px solid var(--primary-colour);
+  border-radius: 4px;
 }
 
 /* Responsive styles */
