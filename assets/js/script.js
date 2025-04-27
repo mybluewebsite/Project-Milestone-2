@@ -389,7 +389,7 @@ function displayGames(games, gameListId) {
     `;
     gameList.appendChild(gameItem);
   });
-};
+}
 
 /**
  * Sets up the event listener for the filter controls to filter and display games.
@@ -503,30 +503,34 @@ window.onload = function () {
 
 // JavaScript to handle the form submission for favourite console game
 
-const form = document.getElementById('favouriteGameForm');
-const gameInput = document.getElementById('consoleGame');
-const messageDiv = document.getElementById('submissionMessage');
+document.addEventListener("DOMContentLoaded", function () {
+  const form = document.getElementById("favouriteGameForm");
+  const gameInput = document.getElementById("consoleGame");
+  const messageDiv = document.getElementById("submissionMessage");
 
-form.addEventListener('submit', function(event) {
-  event.preventDefault();
+  if (form && gameInput && messageDiv) {
+    form.addEventListener("submit", function (event) {
+      event.preventDefault();
 
-  const favouriteGame = gameInput.value.trim();
+      const favouriteGame = gameInput.value.trim();
 
-  if (favouriteGame === "") {
-    alert("Please enter your favourite console game.");
-    return;
+      if (favouriteGame === "") {
+        alert("Please enter your favourite game.");
+        return;
+      }
+      if (favouriteGame.length < 3) {
+        alert("Your favourite game must be at least 3 characters long.");
+        return;
+      }
+
+      messageDiv.textContent = `Your favourite game is: ${favouriteGame}`;
+      messageDiv.style.display = "block";
+      console.log("Submitted favourite game:", favouriteGame);
+
+      gameInput.value = "";
+      setTimeout(() => {
+        messageDiv.style.display = "none";
+      }, 5000);
+    });
   }
-  if (favouriteGame.length < 3) {
-    alert("Your favourite console game must be at least 3 characters long.");
-    return;
-  }
-
-  messageDiv.textContent = `Your favourite console game is: ${favouriteGame}`;
-  messageDiv.style.display = 'block';
-  console.log("Submitted favourite game:", favouriteGame);
-
-  gameInput.value = '';
-  setTimeout(() => {
-    messageDiv.style.display = 'none';
-  }, 5000);
 });
