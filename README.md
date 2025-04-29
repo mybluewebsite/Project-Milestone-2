@@ -8,6 +8,10 @@ This project offers a captivating journey through the world of top-tier gaming, 
 
 Crafted with a blend of dynamic JavaScript, structured HTML, and stylish CSS, this website delivers a functional yet playful experience designed purely for the joy of reminiscing. Navigate through a visually engaging interface that brings to life some of the most iconic gaming consoles alongside their most celebrated games. The interactive elements, powered by JavaScript, ensure a smooth and responsive journey as you explore these gaming milestones. While the site serves no practical purpose beyond nostalgia, its engaging design and user-friendly features aim to evoke fond memories and spark conversations about your favourite gaming moments.
 
+### Project Frontpage
+
+![Frontpage](assets/readme_files/frontpage.png)
+
 ### Website responsivenes
 
 ![Website responsiveness](assets/readme_files/website-design.png)
@@ -55,6 +59,11 @@ This website aims to inform users about highly-rated games from top-tier PlaySta
 ## 2. Design
 
 The website's design emphasizes a minimalist and clean aesthetic, drawing inspiration from the color palettes of the consoles themselves. This approach is balanced with elements of fun and creativity. The site incorporates both light and dark modes, and features large, user-friendly icons to enhance accessibility. Originally, console and game pages were structured as lists, but were redesigned using carousels to provide a more engaging and dynamic user experience.
+
+The main colours used throughout are as follows:
+
+![Primary Colour](assets/readme_files/night.png) ![Secondary Colour](assets/readme_files/antiflash-white.png)
+![Yale Blue](assets/readme_files/yale-blue.png) ![Pakistan Green](assets/readme_files/pakistan-green.png)
 
 ### Wireframe
 
@@ -293,7 +302,37 @@ function displayGames(games, gameListId) {
 
 1. HTML Validator Results
 
-   - 
+   - One error was found within the button element:
+
+![HTML error](assets/readme_files/button-error.png)
+
+The code read:
+```
+      <button
+        class="learn-more-btn"
+        data-page="Nintendo"
+        onclick="openNintendoURL()"
+        target="_blank"
+        rel="noopener noreferrer"
+      >
+        Learn More
+      </button>
+```
+
+After modifying the JavaScript code, I was able to remove the "target" and "rel" attributes. This adjustment resolved the issue, and the code now functions as expected without the previous error.
+
+The code now reads:
+```
+      <button
+        class="learn-more-btn"
+        data-page="Nintendo"
+        onclick="openNintendoURL()"
+      >
+        Learn More
+      </button>
+```
+
+![HTML Validator Results](assets/readme_files/html-results.png)
 
 2. CSS Validator Results
 
