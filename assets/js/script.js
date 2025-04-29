@@ -1,3 +1,7 @@
+// Enable strict mode
+
+"use strict";
+
 // Switches between light and dark modes function
 
 let darkmode = localStorage.getItem("darkmode");
