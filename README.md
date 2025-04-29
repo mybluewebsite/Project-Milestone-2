@@ -384,12 +384,12 @@ The website is compatible with Chrome, Safari, and Microsoft Edge. It has been t
 
 - To make a copy of the original version so you can view and edit within your own GitHub repositories, you should do the following:
 
-  - Locate the [GitHub repository]() in question.
+  - Locate the [GitHub repository](https://github.com/mybluewebsite/console-nostalgia) for my website.
   - At the top of the page, below the main menu, you will find the "Fork" button.
   - Select "Create a new fork" which will rediredct you to another page where you can change the description and title.
   - Select "Create fork" which will make a copy in your own GitHub repository.
 
-The live link can be found [here]().
+The live link can be found [here](https://mybluewebsite.github.io/console-nostalgia/).
 
 ---
 
