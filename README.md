@@ -293,9 +293,14 @@ function displayGames(games, gameListId) {
 ## 4. Testing
 
 1. Validator testing
+   - [W3C HTML Validator](https://validator.w3.org/)
+   - [W3C CSS Validator](https://jigsaw.w3.org/css-validator/)
 2. Lighthouse testing
+   - Google Chrome Developer Tools
 3. JSHint testing
+   - [JSHint](https://jshint.com/)
 4. Wave testing
+   - [WAVE](https://wave.webaim.org/)
 5. Manual testing
 
 ### Validator Testing
@@ -336,17 +341,29 @@ The code now reads:
 
 2. CSS Validator Results
 
-   - 
+   - No errors found.
+
+![CSS Validator Results](assets/readme_files/css-validator.png)
 
 3. Lighthouse Testing
 
-   - 
+   - Frontpage lighthouse result:
+
+![Frontpage Lighthouse Results](assets/readme_files/frontpage-lighthouse.png)
+
+   - Console and games page results:
+  
+![Console & Games Pages Lighthouse Results](assets/readme_files/console-games-lighthouse.png)
 
 4. Wave Testing
 
-   - All pages have been tested using [Wave](https://wave.webaim.org/). No errors were found.
+   - During initial WAVE testing, the front page flagged several accessibility errors. Specifically, images were missing alternative text, and buttons lacked descriptive aria-labels. I also took the opportunity to address the reported alerts, enhancing the overall accessibility and user experience of the website.
 
+![Failed WAVE result](assets/readme_files/wave-fail.png)
 
+![Frontpage WAVE Results](assets/readme_files/frontpage-wave.png)
+
+The subsequent pages passed the WAVE accessibility testing without any further errors or alerts identified.
 
 5. Manual Testing
 
