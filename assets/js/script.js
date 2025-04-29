@@ -122,7 +122,9 @@ tiles.forEach((tile, index) => {
 // Remove default classes from Bootstrap
 
 const defaultClass = document.querySelector(".bg-dark");
-defaultClass.classList.remove("bg-dark");
+if (defaultClass) {
+  defaultClass.classList.remove("bg-dark");
+}
 
 // JavaScript to dynamically load game data and filter it based on the selected platform.
 
