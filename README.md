@@ -1,46 +1,45 @@
-![Heli Logo](https://img.icons8.com/?size=100&id=p60BZD89WT52&format=png&color=000000) ![Laptop Logo](https://img.icons8.com/?size=100&id=43629&format=png&color=000000)
+![PlayStation Logo](https://img.icons8.com/?size=100&id=LQvs2TUxXdFy&format=png&color=000000) ![Nintendo Logo](https://img.icons8.com/?size=100&id=19598&format=png&color=000000) ![Xbox Logo](https://img.icons8.com/?size=100&id=wlFMPtzt97an&format=png&color=000000)
 
-# Welcome to my Project Milestone 1
+# Welcome to Console Nostalgia
 
 ### Project Description
 
-This is my first project milestone I've had to complete as part of Code Institute's Full Stack Web Application Development Programme. The website is of a minimalist design which showcases my experience within the Aviation sector and the experiences/skills I have obtained during my transition into Cybersecurity.
+This project offers a captivating journey through the world of top-tier gaming, showcasing the most acclaimed consoles from PlayStation, Nintendo, and Xbox. Immerse yourself in the details of each powerful system and discover the highest-rated video games that define their legacies. From thrilling adventures to immersive storytelling, get a glimpse into the experiences that have captivated players and critics alike.
 
-### Project Frontpage
+Crafted with a blend of dynamic JavaScript, structured HTML, and stylish CSS, this website delivers a functional yet playful experience designed purely for the joy of reminiscing. Navigate through a visually engaging interface that brings to life some of the most iconic gaming consoles alongside their most celebrated games. The interactive elements, powered by JavaScript, ensure a smooth and responsive journey as you explore these gaming milestones. While the site serves no practical purpose beyond nostalgia, its engaging design and user-friendly features aim to evoke fond memories and spark conversations about your favourite gaming moments.
 
-![frontpage](assets/images/project_1_frontpage.png)
+### Website responsivenes
+
+![Website responsiveness](assets/readme_files/website-design.png)
 
 ---
 
 ## Table of contents
 
 1. UX
-
    - User stories
 
 2. Design
-
    - Wireframes
 
 3. Features
-
    - Existing features
    - Future features
 
 4. Technologies
-
    - Languages
    - Frameworks, libraries, and programs
 
 5. Testing
-   - Browser testing
-   - Code validation
-   - Lighthouse testing
-   - JShint
+   - Validator
+   - Lighthouse
+   - JSHint
+   - Wave
+   - Manual
+
 6. Deployment
 
 7. Credits and References
-   - Code
    - Content
    - Media
    - Acknowledgements
@@ -61,11 +60,11 @@ The website's design emphasizes a minimalist and clean aesthetic, drawing inspir
 
 1. Mobile Wireframe
 
-![Wireframe Mobile](assets/images/wireframe_mobile.png)
+![Wireframe Mobile]()
 
 2. Desktop Wireframe
 
-![Wireframe Desktop](assets/images/wireframe_desktop.png)
+![Wireframe Desktop]()
 
 ---
 
@@ -77,9 +76,9 @@ __Frontpage GIFs__
 
   - The use of GIFs on hover for the frontpage image tiles enhances the users' experience, promoting interactivity and engagement.
   
-  ![PlayStation GIF]()
-  ![Nintendo GIF]()
-  ![Xbox GIF]()
+  ![PlayStation GIF](assets/readme_files/ps-gif.gif)
+  ![Nintendo GIF](assets/readme_files/nintendo-gif.gif)
+  ![Xbox GIF](assets/readme_files/xbox-gif.gif)
 
 ```
 const tiles = document.querySelectorAll(".tile");
@@ -169,7 +168,7 @@ __Consoles Carousel__
 
   - By incorporating carousels, the website offers a more enjoyable and playful experience, benefiting user experience.
 
-  ![Console carousel]()
+  ![Console carousel](assets/readme_files/carousel-image.png)
 
 ```
 /**
@@ -210,7 +209,7 @@ __Games Filtering__
 
   - The website features a game filter that lets you view different consoles and quickly find the two top-rated games for each one.
 
-  ![Game filtering]()
+  ![Game filtering](assets/readme_files/filter-image.png)
 
 ```
 /**
@@ -239,6 +238,7 @@ function displayGames(games, gameListId) {
 ### Future Features
 
 - As a design enhancement, controller buttons will be implemented on the console and games pages. These interactive elements will allow users to easily navigate to different areas of the site, thereby reinforcing the website's overall objective.
+- The user-submitted favourite games will be captured via the form element and stored in a backend database. This data will then dynamically update the website, showcasing the collective favourite games alongside the curated selections.
 
 ---
 
@@ -263,7 +263,7 @@ function displayGames(games, gameListId) {
 5. [GitHub:](https://github.com/)
    - GitHub is used to store and interact with the code once pushed from gitPod.
 6. [Balsamiq:](https://balsamiq.com/)
-   - Balsamiq has been used create the [wireframes](assets/project_milestone_1_template.bmpr).
+   - Balsamiq has been used create the wireframes.
 7. [Fontjoy:](https://fontjoy.com/)
    - Fontjoy was used to generate 3 random font pairings.
 8. [Coolors:](https://coolors.co/)
@@ -276,6 +276,8 @@ function displayGames(games, gameListId) {
     - Pexels has been used for the addition of stock photos.
 12. [JQuery:](https://jquery.com/)
     - JQuery has been used for JavaScript elements.
+13. [Ezgif:](https://ezgif.com/)
+    - Ezgif has been used to reduce the size and optimise the gifs for use in the readme.
 
 ---
 
@@ -290,6 +292,7 @@ function displayGames(games, gameListId) {
 ### Validator Testing
 
 1. HTML Validator Results
+
    - 
 
 2. CSS Validator Results
@@ -303,44 +306,34 @@ function displayGames(games, gameListId) {
 4. Wave Testing
 
    - All pages have been tested using [Wave](https://wave.webaim.org/). No errors were found.
-     - 
+
+
 
 5. Manual Testing
 
-   - Selecting the navbar elements takes you to their respective pages.
-   - Selecting "Download CV" downloads and opens the CV in a new tab.
-   - Selecting either of the social links takes you to their respective webpages.
-   - Clicking "Send" on the form without inputting data will bring up a caution message.
-   - Clicking the arrows on the carousel on the "Work Experience" page will allow you to cylce through the images.
+   - The home button returns the user to the homepage.
+   - The mode button toggles between light and dark color schemes.
+   - Selecting a console image navigates the user to the respective console and games pages.
+   - The form provides a response to user input and displays an error message if the input is less than three characters.
+   - The carousel on the console pages allows users to cycle through images using the arrow controls.
+   - The "Learn More" button on each console page redirects users to the official manufacturer's website for that console.
 
-The program is compatible with Chrome, Safari, and Microsoft Edge. The website has been thoroughly tested and is fully responsive across various devices, including Samsung S23, Google Pixel 7, tablets, and laptops. Feedback from mobile users was incorporated throughout the development process.
-
-### Known Bugs
-
-- Added a ":focus-within" pseudo-class as an attempt to change the blue box shadow of the input forms on the contact page.
-- When running "Lighthouse" on the frontpage, the aspect-ratio of the hero img is incorrect and decreases overall performance score.
+The website is compatible with Chrome, Safari, and Microsoft Edge. It has been thoroughly tested for responsiveness across a range of devices, including Samsung S23, Google Pixel 7, tablets, and laptops. User feedback from mobile devices has been integrated throughout the development process.
 
 ---
 
 ## 5. Deployment
 
-### GitHub Pages
-
-- The site was deployed to GitHub pages. The steps to deploy are as follows:
-  - In the specific [GitHub repository](https://github.com/), navigate to the "Settings" tab.
-  - Scroll down until you see "pages" on the left-hand side.
-  - From the "Branch" sub-section, under the "Build and Deployment" section, from the drop-down menu, select "main" and save.
-  - You will find the deployed site under "Github Pages" showing your live site and it's URL, allowing you to navigate to the deployed website.
-
-### Forking your GitHub Repository
+### Forking my GitHub Repository
 
 - To make a copy of the original version so you can view and edit within your own GitHub repositories, you should do the following:
-  - Locate the [GitHub repository](https://github.com/) in question.
+
+  - Locate the [GitHub repository]() in question.
   - At the top of the page, below the main menu, you will find the "Fork" button.
   - Select "Create a new fork" which will rediredct you to another page where you can change the description and title.
   - Select "Create fork" which will make a copy in your own GitHub repository.
 
-The live link can be found [here](https://mybluewebsite.github.io/Project_Milestone_1/index.html).
+The live link can be found [here]().
 
 ---
 
@@ -348,10 +341,13 @@ The live link can be found [here](https://mybluewebsite.github.io/Project_Milest
 
 ### Content
 
-- "Lorem ipsum" used as placeholder text throughout the website.
-- The icons in the footer were taken from [Font Awesome](https://fontawesome.com/).
-- [Google](https://www.google.com/) has been used to create a "::before" pseudo-class for the "Frequently Asked Questions" section to replace the bullet-points.
-  ![seen here](assets/images/code_snippet.png)
+This website serves as a curated guide to the pinnacle of console gaming, spotlighting top-rated PlayStation, Nintendo, and Xbox systems. For each featured console, you'll discover insightful details alongside introductions to two of their most critically acclaimed video games.
+
+Beyond the curated selections, the site invites your personal touch, offering a space to highlight your own cherished gaming experiences.
+
+Navigating the site is designed to be seamless for everyone. Accessibility is a priority, featuring easily distinguishable enlarged icons for the home and mode buttons, and a user-friendly light and dark mode to suit your preference.
+
+Keen to delve deeper? Each console and game featured includes a convenient "Learn More" button, providing a direct link to the manufacturer's official website for comprehensive information.
 
 ### Media
 
@@ -359,9 +355,8 @@ The live link can be found [here](https://mybluewebsite.github.io/Project_Milest
 
 ### Acknowledgements
 
-- Special thanks to [Code Institute](https://codeinstitute.net/) for providing a sample README to edit accordingly.
-- Thank you to Spence, for providing tutor support and assisting me with the completion of this project.
+- Special thanks to Spence, for providing tutor support and assisting me with the completion of this project.
 
 ---
 
-![Heli Logo](https://img.icons8.com/?size=100&id=p60BZD89WT52&format=png&color=000000) ![Laptop Logo](https://img.icons8.com/?size=100&id=43629&format=png&color=000000)
+![PlayStation Logo](https://img.icons8.com/?size=100&id=LQvs2TUxXdFy&format=png&color=000000) ![Nintendo Logo](https://img.icons8.com/?size=100&id=19598&format=png&color=000000) ![Xbox Logo](https://img.icons8.com/?size=100&id=wlFMPtzt97an&format=png&color=000000)
