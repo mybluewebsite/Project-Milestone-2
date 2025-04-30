@@ -69,11 +69,11 @@ The main colours used throughout are as follows:
 
 1. Mobile Wireframe
 
-![Wireframe Mobile]()
+![Mobile Wireframe](assets/readme_files/mobile-wireframe.png)
 
 2. Desktop Wireframe
 
-![Wireframe Desktop]()
+![Desktop Wireframe](assets/readme_files/desktop-wireframe.png)
 
 ---
 
