@@ -267,16 +267,16 @@ function displayGames(games, gameListId) {
    - Google Fonts provided me with the 3 different fonts I have used.
 3. [Font Awesome:](https://fontawesome.com/)
    - Font Awesome allowed me to use the icons required for the footer section.
-4. [Gitpod:](https://www.gitpod.io/)
-   - GitPod was used to write the code and commit and push to gitHub.
+4. [Visual Studio Code:](https://code.visualstudio.com/)
+   - VS Code has been used to write the code and commit and push to GitHub.
 5. [GitHub:](https://github.com/)
-   - GitHub is used to store and interact with the code once pushed from gitPod.
+   - GitHub is used to store and interact with the code once pushed from VS Code.
 6. [Balsamiq:](https://balsamiq.com/)
    - Balsamiq has been used create the wireframes.
 7. [Fontjoy:](https://fontjoy.com/)
-   - Fontjoy was used to generate 3 random font pairings.
+   - Fontjoy was used to generate random font pairings.
 8. [Coolors:](https://coolors.co/)
-   - Coolors was used to generate random colour pairings for the overall design of the website.
+   - Coolors was used to generate random colour pairings for the overall design of the website, and as a contrast checker during WAVE testing.
 9. [Hover.css:](https://ianlunn.github.io/Hover/)
    - Hover.css has been used to add the float transition to the social links in the footer section.
 10. [CSS autoprefixer:](https://autoprefixer.github.io/)
